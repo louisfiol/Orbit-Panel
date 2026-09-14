@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInformation>
+	<Attribute id="Package:ID" value="studioone.colorbar.v3"/>
+	<Attribute id="Package:SkinFile" value="skin/"/>
+	<Attribute id="Package:TranslationFile" value="translations/"/>
+	<Attribute id="Package:Version" value="3.2.4"/>
+</MetaInformation>

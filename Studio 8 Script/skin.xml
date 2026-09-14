@@ -1,0 +1,2108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Skin>
+	<Resources>
+		<Image name="ToolbarIcon" url="images/ColorToolbarIcon.png"/>
+		<ShapeImage name="MySelectBoxArrow" url="MySelectBoxArrowShape"/>
+		<ShapeImage name="TitleButtonBackground" url="TitleButtonBackgroundShape" frames="embedded"/>
+		<ShapeImage name="MacroPanelButtonMaskLSmall" url="MacroPanelButtonMaskLSmallShape"/>
+		<ShapeImage name="MacroPanelButtonMaskRSmall" url="MacroPanelButtonMaskRSmallShape"/>
+
+		<ColorScheme name="Main">
+			<ColorScheme.Color name="MyPanelBackgroundColor" color="hsl(212,4,13)" saturation="8:0/10/25" luminance="7:9" invertedvalue="70"/>
+			<ColorScheme.Color name="MyPanelBackgroundMOColor" color="hsl(212,4,18)" saturation="8:0/10/25" luminance="7:9" invertedvalue="80"/>
+			<ColorScheme.Color name="MySelectBoxArrowColor" color="hsl(0,0,100,40)" saturation="0" luminance="0" huefixed="true" invertedvalue="0"/>
+		</ColorScheme>
+	</Resources>
+
+	<ColorScheme name="Main">
+		<ColorScheme.Color name="MyTextBoxBackColor" color="hsl(210,10,14)" saturation="0" luminance="5:5" slcombined="true"  invertedvalue="82"/>
+		<ColorScheme.Color name="MyTextBoxTextColor" color="rgb(200,200,200)"     saturation="5" luminance="6:6" slcombined="true" invertedvalue="0"/>/>
+
+		<ColorScheme.Color name="ListView.TextColor"            color="rgb(190,190,190)"    saturation="5" luminance="6:6" slcombined="true" invertedvalue="0"/>
+		<ColorScheme.Color name="ListView.SelectionColor"    color="rgb(29, 75, 125)"    saturation="5" luminance="6:6" slcombined="true" invertedvalue="80"/>
+
+		<ColorScheme.Color name="ColorBoxTextColor"    color="rgb(255,255,255)"    saturation="100" luminance="6:6" slcombined="true" invertedvalue="52"/>
+		<ColorScheme.Color name="ColorBoxBackColor" color="rgb(29, 75, 125)"  saturation="25" luminance="6:6" slcombined="true"  invertedvalue="52"/>
+		
+		<ColorScheme.Color name="VersionLabel.TextColor"   color="rgb(150,150,150)"    saturation="5" luminance="6:6" slcombined="true" invertedvalue="0"/>
+	</ColorScheme>
+
+	<Shapes>
+		<Shape name="MacroPanelButtonMaskLSmallShape" size="0,0,10,29" style="scale">
+			<Rectangle size="-2,-2,20,33" style="stroke" Pen.color="@Main.MyPanelBackgroundColor" Pen.width="3" radius="6"/>
+		</Shape>
+		<Shape name="MacroPanelButtonMaskRSmallShape" size="0,0,10,29" style="scale">
+			<Rectangle size="-10,-2,22,33" style="stroke" Pen.color="@Main.MyPanelBackgroundColor" Pen.width="3" radius="6"/>
+		</Shape>
+		<Shape name="MySelectBoxArrowShape" size="0,0,22,29">
+			<Triangle style="fill" point1="8,13" point2="16,13" point3="12,18" Brush.color="@Main.MySelectBoxArrowColor"/>
+		</Shape>
+		<Shape name="TitleButtonBackgroundShape" style="scale">
+			<Shape name="normal"/>
+			<Shape name="mouseover" style="scale">
+				<Rectangle size="0,0,10,10" style="fill tiled" Brush.color="@Main.MyPanelBackgroundMOColor" radius="3"/>
+			</Shape>
+		</Shape>
+	</Shapes>
+
+	<Styles>
+		<Style name="MacroPanelButtonMaskLSmall">
+			<Image name="background" image="MacroPanelButtonMaskLSmall"/>
+		</Style>
+		<Style name="MacroPanelButtonMaskRSmall">
+			<Image name="background" image="MacroPanelButtonMaskRSmall"/>
+		</Style>
+		<Style name="CommandBarStyle">
+			<Color name="backcolor" color="@Main.MyPanelBackgroundColor"/>
+			<!-- background color used when resizing icons -->
+		</Style>
+		<Style name="MyButton" inherit="Standard.AddIn.Button">
+			<Align name="textalign" align="hcenter"/>
+			<Font name="textfont" themeid="PresonusUI" size="12" />
+		</Style>
+
+		<Style name="MyButtonS" inherit="Standard.AddIn.Button">
+			<Align name="textalign" align="hcenter"/>
+			<Font name="textfont" themeid="PresonusUI" size="10" />
+		</Style>
+
+		<Style name='MyTextBox' inherit="Standard.AddIn.EditBox">
+			<Align name="textalign" align="hcenter"/>
+			<Font name="textfont" themeid="PresonusUI" size="12" />
+		</Style>
+
+		<Style name='MyTextBoxSmall' inherit="Standard.AddIn.EditBox">
+			<Align name="textalign" align="hright"/>
+			<Font name="textfont" themeid="PresonusUI" size="10" />
+		</Style>
+
+		<Style name='MyIndexBox' inherit="Standard.AddIn.EditBox">
+			<Align name="textalign" align="hcenter"/>
+			<Font name="textfont" themeid="PresonusUI" size="12" />
+		</Style>
+
+		<Style name="MyLabel" inherit="Standard.AddIn.Label">
+			<Font name="textfont" themeid="PresonusUI" size="12" style="normal"/>
+			<Align name="textalign" align="left vcenter"/>
+		</Style>
+
+		<Style name="ColorName" inherit="Standard.AddIn.Label">
+			<!-- <Color name="backcolor" color="@Main.ColorBoxBackColor"/> -->
+			<Color name="textcolor" color="@Main.ColorBoxTextColor"/>
+			<Font name="textfont" themeid="PresonusUI" size="8" style="normal"/>
+			<Align name="textalign" align="left vcenter"/>
+		</Style>
+
+		<Style name="MyDockedLabelC" inherit="Standard.AddIn.Label">
+			<Font name="textfont" themeid="PresonusUI" size="8" style="normal"/>
+			<Align name="textalign" align="center vcenter"/>
+		</Style>
+
+		<Style name="MyLabelC" inherit="Standard.AddIn.Label">
+			<Font name="textfont" themeid="PresonusUI" size="12" style="normal"/>
+			<Align name="textalign" align="center vcenter"/>
+		</Style>
+
+		<Style name="MyLabelR" inherit="Standard.AddIn.Label">
+			<Font name="textfont" themeid="PresonusUI" size="12" style='normal'  />
+			<Align name="textalign" align="right vcenter"/>
+		</Style>
+
+		<Style name="MenuSelectBox" inherit="MySelectBox">
+			<Metric name="extended" value="1"/> <!-- use extended menu instead of tree presentation -->
+			<Align name="textalign"	align="right"/>
+			<Image name="button"	image="TransparentImage"/>
+		</Style>
+
+		<Style name="MyEditBox" inherit="Standard.AddIn.Label">
+			<Font name="textfont" themeid="PresonusUI" size="12" style='normal' />
+			<Align name="textalign" align="center vcenter"/>
+		</Style>
+
+		<Style name="Keywords" >
+			<Align name="textalign"	align="left"/>
+			<Color name="backcolor" color="@Main.MyTextBoxBackColor"/>
+			<Color name="textcolor" color="@Main.MyTextBoxTextColor"/>
+			<Font  name="textfont" themeid="PresonusUI" size="12" style='normal'/>
+			<Metric name="padding.left"	value="3"/>
+		</Style>
+
+		<Style name="SectionDividerV" inherit="Standard.AddIn.SectionDividerV"/>
+
+		<Style name="MyKeyWords" inherit="Standard.AddIn.EditBox">
+			<Font name="textfont" themeid="PresonusUI" size="12" style='normal' />
+			<Align name="textalign" align="left" radius="6"/>
+			<Color name="backcolor" color="@Main.MyPanelBackgroundColor"/>
+			<Metric name="padding.left" value="5"/>
+		</Style>
+		<Style name="LeftAlign">
+			<Align name="textalign" align="left" radius="6"/>
+		</Style>
+
+		<Style name="MyCheckBox" inherit="Standard.Menu.MenuHeaderCheckBox">
+			<Font name="textfont" themeid="PresonusUI" size="12" />
+		</Style>
+		<Style name="MyMenuHeader" inherit="Standard.Menu.MenuHeader"/>
+	</Styles>
+
+	<Forms>
+
+		<!-- ******************************************************************************************** -->
+		<!-- Color Panel -->
+		<!-- ******************************************************************************************** -->
+
+		<Form name="UserPanel" title="Color Toolbar" windowstyle="floating above" attach="all fitsize">
+			<switch controller="$frame" property="isWindow">
+				<case value="1">
+					<View name="UserPanel.Detached" />
+				</case>
+				<default>
+					<View name="UserPanel.Inplace" attach="all hfit"/>
+				</default>
+			</switch>
+		</Form>
+
+		<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- /////////////////////////////////////////////  DOCKED PALETTE TOOLBAR /////////////////////////////////////////////// -->
+		<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+		<!-- Inplace variant is using the same pixel height as built-in application panels -->
+		<Form name="UserPanel.Inplace">
+			<Vertical size="0,0" margin='0' spacing='0' attach="all fitsize">
+				<View size="0,0,0,0">
+					<Vertical size="0,0" margin='0' spacing='0' attach="all fitsize">	
+
+						<View height='2'/> 
+
+						<Horizontal margin='0' spacing='5'>
+							<SelectBox name="FileMenu" options="transparent hidebutton" height="20" attach="vcenter" tooltip="Color Toolbar Menu" style="MenuSelectBox">
+								<Button title="▼" width='20' height='20' attach="vcenter"/>
+							</SelectBox>
+							<Space width='5'/>
+							<Button name="Conform" title="Conform" width='60' height="20" tooltip="Conform song to current setup" attach="left"/>
+							<Space width='204'/>
+							<Label title="- Standard Colors -" attach="vcenter" tooltip="Standard Colors" style='MyLabelC'/>
+
+							<Space width='74'/>
+
+							<Toggle name="ColorEvents" title="Event" width='42' height="20" tooltip="Only color selected events" attach="left"/>
+
+							<Space width='2'/>						
+
+							<Toggle name="Tint" title="Tint" width='32' height='20' tooltip="Select channels, toggle Tint button on, select color from palette" attach="left"/>
+							
+							<Space width='2'/>
+
+							<Toggle name="Shade" title="Shade" width='46' height='20' tooltip="Select channels, toggle Shade button on, select color from palette" attach="left"/>
+							
+							<Space width='2'/>
+
+							<Toggle name="Gradient" title="Gradient" width='58' height='20' tooltip="Select channels, toggle Gradient button on, click first color, then secound color" attach="left"/>
+
+							<Space width='21'/>
+
+							<Toggle name="multipleFilters" title="Filter+" width='44' height='20' tooltip="Toggle Filter+ On for multiple filters, Off for one at a time"/>
+							
+							<SelectBox name="filterMenu" width= '190' height="20" tooltip="Filter Track View">
+							</SelectBox>
+
+							<Space width='64'/>
+
+							<Label title="- Custom Colors -" attach="vcenter" tooltip="Custom Colors" style='MyLabelC'/>
+
+							<Space width='155'/>
+
+							<Button name="Options" title="Options" width='54' height='20' tooltip="Color Toolbar Options" attach="left"/>
+
+							<Space width='2'/>
+
+							<Button name="CTEdit" title="Edit" width='34' height='20' tooltip="Edit Color Toolbar" attach="left"/>
+
+							<Space width='2'/>
+
+							<Button name="HelpButton" title="Help" width='36' height='20' tooltip="Online Help" attach="left"/>
+						</Horizontal>
+
+						<View height='8'/> 
+
+						<Horizontal margin='0' spacing='2'>
+
+							<ColorBox name="ColorBox0" width="13" height="17" tooltip="Slot #1: Click to color selected channel(s)">
+								<Button name="ColorButton0" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox1" width="13" height="17" tooltip="Slot #2: Click to color selected channel(s)">
+								<Button name="ColorButton1" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox2" width="13" height="17" tooltip="Slot #3: Click to color selected channel(s)">
+								<Button name="ColorButton2" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox3" width="13" height="17" tooltip="Slot #4: Click to color selected channel(s)">
+								<Button name="ColorButton3" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox4" width="13" height="17" tooltip="Slot #5: Click to color selected channel(s)">
+								<Button name="ColorButton4" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox5" width="13" height="17" tooltip="Slot #6: Click to color selected channel(s)">
+								<Button name="ColorButton5" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox6" width="13" height="17" tooltip="Slot #7: Click to color selected channel(s)">
+								<Button name="ColorButton6" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox7" width="13" height="17" tooltip="Slot #8: Click to color selected channel(s)">
+								<Button name="ColorButton7" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox8" width="13" height="17" tooltip="Slot #9: Click to color selected channel(s)">
+								<Button name="ColorButton8" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox9" width="13" height="17" tooltip="Slot #10: Click to color selected channel(s)">
+								<Button name="ColorButton9" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox10" width="13" height="17" tooltip="Slot #11: Click to color selected channel(s)">
+								<Button name="ColorButton10" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox11" width="13" height="17" tooltip="Slot #12: Click to color selected channel(s)">
+								<Button name="ColorButton11" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox12" width="13" height="17" tooltip="Slot #13: Click to color selected channel(s)">
+								<Button name="ColorButton12" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox13" width="13" height="17" tooltip="Slot #14: Click to color selected channel(s)">
+								<Button name="ColorButton13" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox14" width="13" height="17" tooltip="Slot #15: Click to color selected channel(s)">
+								<Button name="ColorButton14" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox15" width="13" height="17" tooltip="Slot #16: Click to color selected channel(s)">
+								<Button name="ColorButton15" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<Space width='5'/>
+
+							<ColorBox name="ColorBox16" width="13" height="17" tooltip="Slot #17: Click to color selected channel(s)">
+								<Button name="ColorButton16" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox17" width="13" height="17" tooltip="Slot #18: Click to color selected channel(s)">
+								<Button name="ColorButton17" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox18" width="13" height="17" tooltip="Slot #19: Click to color selected channel(s)">
+								<Button name="ColorButton18" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox19" width="13" height="17" tooltip="Slot #20: Click to color selected channel(s)">
+								<Button name="ColorButton19" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox20" width="13" height="17" tooltip="Slot #21: Click to color selected channel(s)">
+								<Button name="ColorButton20" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox21" width="13" height="17" tooltip="Slot #22: Click to color selected channel(s)">
+								<Button name="ColorButton21" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox22" width="13" height="17" tooltip="Slot #23: Click to color selected channel(s)">
+								<Button name="ColorButton22" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox23" width="13" height="17" tooltip="Slot #24: Click to color selected channel(s)">
+								<Button name="ColorButton23" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox24" width="13" height="17" tooltip="Slot #25: Click to color selected channel(s)">
+								<Button name="ColorButton24" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox25" width="13" height="17" tooltip="Slot #26: Click to color selected channel(s)">
+								<Button name="ColorButton25" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox26" width="13" height="17" tooltip="Slot #27: Click to color selected channel(s)">
+								<Button name="ColorButton26" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox27" width="13" height="17" tooltip="Slot #28: Click to color selected channel(s)">
+								<Button name="ColorButton27" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox28" width="13" height="17" tooltip="Slot #29: Click to color selected channel(s)">
+								<Button name="ColorButton28" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox29" width="13" height="17" tooltip="Slot #30: Click to color selected channel(s)">
+								<Button name="ColorButton29" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox30" width="13" height="17" tooltip="Slot #31: Click to color selected channel(s)">
+								<Button name="ColorButton30" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox31" width="13" height="17" tooltip="Slot #32: Click to color selected channel(s)">
+								<Button name="ColorButton31" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<Space width='5'/>
+
+							<ColorBox name="ColorBox32" width="13" height="17" tooltip="Slot #33: Click to color selected channel(s)">
+								<Button name="ColorButton32" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox33" width="13" height="17" tooltip="Slot #34: Click to color selected channel(s)">
+								<Button name="ColorButton33" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox34" width="13" height="17" tooltip="Slot #35: Click to color selected channel(s)">
+								<Button name="ColorButton34" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox35" width="13" height="17" tooltip="Slot #36: Click to color selected channel(s)">
+								<Button name="ColorButton35" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox36" width="13" height="17" tooltip="Slot #37: Click to color selected channel(s)">
+								<Button name="ColorButton36" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox37" width="13" height="17" tooltip="Slot #38: Click to color selected channel(s)">
+								<Button name="ColorButton37" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox38" width="13" height="17" tooltip="Slot #39: Click to color selected channel(s)">
+								<Button name="ColorButton38" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox39" width="13" height="17" tooltip="Slot #40: Click to color selected channel(s)">
+								<Button name="ColorButton39" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox40" width="13" height="17" tooltip="Slot #41: Click to color selected channel(s)">
+								<Button name="ColorButton40" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox41" width="13" height="17" tooltip="Slot #42: Click to color selected channel(s)">
+								<Button name="ColorButton41" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox42" width="13" height="17" tooltip="Slot #43: Click to color selected channel(s)">
+								<Button name="ColorButton42" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox43" width="13" height="17" tooltip="Slot #44: Click to color selected channel(s)">
+								<Button name="ColorButton43" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox44" width="13" height="17" tooltip="Slot #45: Click to color selected channel(s)">
+								<Button name="ColorButton44" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox45" width="13" height="17" tooltip="Slot #46: Click to color selected channel(s)">
+								<Button name="ColorButton45" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox46" width="13" height="17" tooltip="Slot #47: Click to color selected channel(s)">
+								<Button name="ColorButton46" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox47" width="13" height="17" tooltip="Slot #48: Click to color selected channel(s)">
+								<Button name="ColorButton47" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<Space width='15'/>
+
+							<ColorBox name="ColorBox48" width="13" height="17" tooltip="Slot #49: Click to color selected channel(s)">
+								<Button name="ColorButton48" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox49" width="13" height="17" tooltip="Slot #50: Click to color selected channel(s)">
+								<Button name="ColorButton49" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox50" width="13" height="17" tooltip="Slot #51: Click to color selected channel(s)">
+								<Button name="ColorButton50" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox51" width="13" height="17" tooltip="Slot #52: Click to color selected channel(s)">
+								<Button name="ColorButton51" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox52" width="13" height="17" tooltip="Slot #53: Click to color selected channel(s)">
+								<Button name="ColorButton52" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox53" width="13" height="17" tooltip="Slot #54: Click to color selected channel(s)">
+								<Button name="ColorButton53" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox54" width="13" height="17" tooltip="Slot #55: Click to color selected channel(s)">
+								<Button name="ColorButton54" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox55" width="13" height="17" tooltip="Slot #56: Click to color selected channel(s)">
+								<Button name="ColorButton55" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox56" width="13" height="17" tooltip="Slot #57: Click to color selected channel(s)">
+								<Button name="ColorButton56" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox57" width="13" height="17" tooltip="Slot #58: Click to color selected channel(s)">
+								<Button name="ColorButton57" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox58" width="13" height="17" tooltip="Slot #59: Click to color selected channel(s)">
+								<Button name="ColorButton58" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox59" width="13" height="17" tooltip="Slot #60: Click to color selected channel(s)">
+								<Button name="ColorButton59" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox60" width="13" height="17" tooltip="Slot #61: Click to color selected channel(s)">
+								<Button name="ColorButton60" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox61" width="13" height="17" tooltip="Slot #62: Click to color selected channel(s)">
+								<Button name="ColorButton61" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox62" width="13" height="17" tooltip="Slot #63: Click to color selected channel(s)">
+								<Button name="ColorButton62" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox63" width="13" height="17" tooltip="Slot #64: Click to color selected channel(s)">
+								<Button name="ColorButton63" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<Space width='5'/>
+
+							<ColorBox name="ColorBox64" width="13" height="17" tooltip="Slot #65: Click to color selected channel(s)">
+								<Button name="ColorButton64" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox65" width="13" height="17" tooltip="Slot #66: Click to color selected channel(s)">
+								<Button name="ColorButton65" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox66" width="13" height="17" tooltip="Slot #67: Click to color selected channel(s)">
+								<Button name="ColorButton66" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox67" width="13" height="17" tooltip="Slot #68: Click to color selected channel(s)">
+								<Button name="ColorButton67" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox68" width="13" height="17" tooltip="Slot #69: Click to color selected channel(s)">
+								<Button name="ColorButton68" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox69" width="13" height="17" tooltip="Slot #70: Click to color selected channel(s)">
+								<Button name="ColorButton69" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox70" width="13" height="17" tooltip="Slot #71: Click to color selected channel(s)">
+								<Button name="ColorButton70" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox71" width="13" height="17" tooltip="Slot #72: Click to color selected channel(s)">
+								<Button name="ColorButton71" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox72" width="13" height="17" tooltip="Slot #73: Click to color selected channel(s)">
+								<Button name="ColorButton72" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox73" width="13" height="17" tooltip="Slot #74: Click to color selected channel(s)">
+								<Button name="ColorButton73" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox74" width="13" height="17" tooltip="Slot #75: Click to color selected channel(s)">
+								<Button name="ColorButton74" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox75" width="13" height="17" tooltip="Slot #76: Click to color selected channel(s)">
+								<Button name="ColorButton75" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox76" width="13" height="17" tooltip="Slot #77: Click to color selected channel(s)">
+								<Button name="ColorButton76" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox77" width="13" height="17" tooltip="Slot #78: Click to color selected channel(s)">
+								<Button name="ColorButton77" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox78" width="13" height="17" tooltip="Slot #79: Click to color selected channel(s)">
+								<Button name="ColorButton78" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox79" width="13" height="17" tooltip="Slot #80: Click to color selected channel(s)">
+								<Button name="ColorButton79" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<Space width='5'/>
+
+							<ColorBox name="ColorBox80" width="13" height="17" tooltip="Slot #81: Click to color selected channel(s)">
+								<Button name="ColorButton80" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox81" width="13" height="17" tooltip="Slot #82: Click to color selected channel(s)">
+								<Button name="ColorButton81" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox82" width="13" height="17" tooltip="Slot #83: Click to color selected channel(s)">
+								<Button name="ColorButton82" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox83" width="13" height="17" tooltip="Slot #84: Click to color selected channel(s)">
+								<Button name="ColorButton83" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox84" width="13" height="17" tooltip="Slot #85: Click to color selected channel(s)">
+								<Button name="ColorButton84" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox85" width="13" height="17" tooltip="Slot #86: Click to color selected channel(s)">
+								<Button name="ColorButton85" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox86" width="13" height="17" tooltip="Slot #87: Click to color selected channel(s)">
+								<Button name="ColorButton86" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox87" width="13" height="17" tooltip="Slot #88: Click to color selected channel(s)">
+								<Button name="ColorButton87" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox88" width="13" height="17" tooltip="Slot #89: Click to color selected channel(s)">
+								<Button name="ColorButton88" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox89" width="13" height="17" tooltip="Slot #90: Click to color selected channel(s)">
+								<Button name="ColorButton89" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox90" width="13" height="17" tooltip="Slot #91: Click to color selected channel(s)">
+								<Button name="ColorButton90" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox91" width="13" height="17" tooltip="Slot #92: Click to color selected channel(s)">
+								<Button name="ColorButton91" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox92" width="13" height="17" tooltip="Slot #93: Click to color selected channel(s)">
+								<Button name="ColorButton92" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox93" width="13" height="17" tooltip="Slot #94: Click to color selected channel(s)">
+								<Button name="ColorButton93" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox94" width="13" height="17" tooltip="Slot #95: Click to color selected channel(s)">
+								<Button name="ColorButton94" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+							<ColorBox name="ColorBox95" width="13" height="17" tooltip="Slot #96: Click to color selected channel(s)">
+								<Button name="ColorButton95" title="" width="13" height="17" options="transparent border" attach="left"/>
+							</ColorBox>
+
+						</Horizontal>
+					</Vertical>	
+				</View>
+			</Vertical>
+		</Form>
+
+		<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- ///////////////////////////////////// DETACHED MINI TOOLBAR ///////////////////////////////////////////////////////// -->
+		<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+		<Form name="UserPanel.Detached" options="windowmovable">
+			<View size="0,0,0,0">
+				<Vertical spacing='5' margin='0'>
+					<!-- Standard colors -->
+					<DialogGroup spacing='0' margin='0' options="secondary">
+						<Vertical spacing='2' margin='5'>
+							<Horizontal margin='0' spacing='0'>
+								<SelectBox name="FileMenu" options="transparent hidebutton" height="20" attach="vcenter" tooltip="Color Toolbar Menu" style="MenuSelectBox">
+									<Button title="▼" width='20' height='20' attach="vcenter"/>
+								</SelectBox>
+
+								<Space width='12'/>
+
+								<Button name="Conform" title="Conform" width='60' height='20' tooltip="Conform song to current setup" attach="left"/>
+
+								<Space width='252'/>
+
+								<Button name="Options" title="Options" width='54' height='20' tooltip="Color Toolbar Options" attach="right"/>
+
+								<Space width='5'/>
+
+								<Button name="CTEdit" title="Edit" width='34' height='20' tooltip="Edit Color Toolbar" attach="right"/>
+
+								<Space width='5'/>
+
+								<Button name="HelpButton" title="Help" width='36' height='20' tooltip="Online Help" attach="right"/>
+							</Horizontal>
+						</Vertical>
+					</DialogGroup>
+
+					<!-- <Space height='5'/> -->
+
+					<!-- Standard box -->
+					<DialogGroup  title="Standard Colors" attach= "left right" spacing='0' margin='0'>
+						<Vertical spacing='2' margin='5' >
+
+							<Space height='18'/>
+
+							<Horizontal margin='0' spacing='2'>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox0" width="28" height="18" tooltip="Slot #1: Click to color selected channel(s)">
+										<Button name="ColorButton0" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox1" width="28" height="18" tooltip="Slot #2: Click to color selected channel(s)">
+										<Button name="ColorButton1" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox2" width="28" height="18" tooltip="Slot #3: Click to color selected channel(s)">
+										<Button name="ColorButton2" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox3" width="28" height="18" tooltip="Slot #4: Click to color selected channel(s)">
+										<Button name="ColorButton3" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox4" width="28" height="18" tooltip="Slot #5: Click to color selected channel(s)">
+										<Button name="ColorButton4" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox5" width="28" height="18" tooltip="Slot #6: Click to color selected channel(s)">
+										<Button name="ColorButton5" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox6" width="28" height="18" tooltip="Slot #7: Click to color selected channel(s)">
+										<Button name="ColorButton6" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox7" width="28" height="18" tooltip="Slot #8: Click to color selected channel(s)">
+										<Button name="ColorButton7" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox8" width="28" height="18" tooltip="Slot #9: Click to color selected channel(s)">
+										<Button name="ColorButton8" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox9" width="28" height="18" tooltip="Slot #10: Click to color selected channel(s)">
+										<Button name="ColorButton9" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox10" width="28" height="18" tooltip="Slot #11: Click to color selected channel(s)">
+										<Button name="ColorButton10" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox11" width="28" height="18" tooltip="Slot #12: Click to color selected channel(s)">
+										<Button name="ColorButton11" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox12" width="28" height="18" tooltip="Slot #13: Click to color selected channel(s)">
+										<Button name="ColorButton12" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox13" width="28" height="18" tooltip="Slot #14: Click to color selected channel(s)">
+										<Button name="ColorButton13" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox14" width="28" height="18" tooltip="Slot #15: Click to color selected channel(s)">
+										<Button name="ColorButton14" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox15" width="28" height="18" tooltip="Slot #16: Click to color selected channel(s)">
+										<Button name="ColorButton15" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+							</Horizontal>	
+
+							<Horizontal margin='0' spacing='2'>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox16" width="28" height="18" tooltip="Slot #17: Click to color selected channel(s)">
+										<Button name="ColorButton16" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox17" width="28" height="18" tooltip="Slot #18: Click to color selected channel(s)">
+										<Button name="ColorButton17" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox18" width="28" height="18" tooltip="Slot #19: Click to color selected channel(s)">
+										<Button name="ColorButton18" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox19" width="28" height="18" tooltip="Slot #20: Click to color selected channel(s)">
+										<Button name="ColorButton19" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox20" width="28" height="18" tooltip="Slot #21: Click to color selected channel(s)">
+										<Button name="ColorButton20" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox21" width="28" height="18" tooltip="Slot #22: Click to color selected channel(s)">
+										<Button name="ColorButton21" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox22" width="28" height="18" tooltip="Slot #23: Click to color selected channel(s)">
+										<Button name="ColorButton22" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox23" width="28" height="18" tooltip="Slot #24: Click to color selected channel(s)">
+										<Button name="ColorButton23" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox24" width="28" height="18" tooltip="Slot #25: Click to color selected channel(s)">
+										<Button name="ColorButton24" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox25" width="28" height="18" tooltip="Slot #26: Click to color selected channel(s)">
+										<Button name="ColorButton25" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox26" width="28" height="18" tooltip="Slot #27: Click to color selected channel(s)">
+										<Button name="ColorButton26" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox27" width="28" height="18" tooltip="Slot #28: Click to color selected channel(s)">
+										<Button name="ColorButton27" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox28" width="28" height="18" tooltip="Slot #29: Click to color selected channel(s)">
+										<Button name="ColorButton28" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox29" width="28" height="18" tooltip="Slot #30: Click to color selected channel(s)">
+										<Button name="ColorButton29" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox30" width="28" height="18" tooltip="Slot #31: Click to color selected channel(s)">
+										<Button name="ColorButton30" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox31" width="28" height="18" tooltip="Slot #32: Click to color selected channel(s)">
+										<Button name="ColorButton31" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+							</Horizontal>		
+
+							<Horizontal margin='0' spacing='2'>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox32" width="28" height="18" tooltip="Slot #33: Click to color selected channel(s)">
+										<Button name="ColorButton32" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox33" width="28" height="18" tooltip="Slot #34: Click to color selected channel(s)">
+										<Button name="ColorButton33" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox34" width="28" height="18" tooltip="Slot #35: Click to color selected channel(s)">
+										<Button name="ColorButton34" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox35" width="28" height="18" tooltip="Slot #36: Click to color selected channel(s)">
+										<Button name="ColorButton35" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox36" width="28" height="18" tooltip="Slot #37: Click to color selected channel(s)">
+										<Button name="ColorButton36" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox37" width="28" height="18" tooltip="Slot #38: Click to color selected channel(s)">
+										<Button name="ColorButton37" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox38" width="28" height="18" tooltip="Slot #39: Click to color selected channel(s)">
+										<Button name="ColorButton38" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox39" width="28" height="18" tooltip="Slot #40: Click to color selected channel(s)">
+										<Button name="ColorButton39" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox40" width="28" height="18" tooltip="Slot #41: Click to color selected channel(s)">
+										<Button name="ColorButton40" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox41" width="28" height="18" tooltip="Slot #42: Click to color selected channel(s)">
+										<Button name="ColorButton41" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox42" width="28" height="18" tooltip="Slot #43: Click to color selected channel(s)">
+										<Button name="ColorButton42" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox43" width="28" height="18" tooltip="Slot #44: Click to color selected channel(s)">
+										<Button name="ColorButton43" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox44" width="28" height="18" tooltip="Slot #45: Click to color selected channel(s)">
+										<Button name="ColorButton44" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox45" width="28" height="18" tooltip="Slot #46: Click to color selected channel(s)">
+										<Button name="ColorButton45" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox46" width="28" height="18" tooltip="Slot #47: Click to color selected channel(s)">
+										<Button name="ColorButton46" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox47" width="28" height="18" tooltip="Slot #48: Click to color selected channel(s)">
+										<Button name="ColorButton47" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+							</Horizontal>
+						</Vertical>
+					</DialogGroup>
+
+					<DialogGroup  title="Custom Colors" attach= "left right" spacing='0' margin='0'>
+						<Vertical spacing='2' margin='5' >
+						
+						<Space height='18'/>
+
+							<Horizontal margin='0' spacing='2'>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox48" width="28" height="18" tooltip="Slot #49: Click to color selected channel(s)">
+										<Button name="ColorButton48" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox49" width="28" height="18" tooltip="Slot #50: Click to color selected channel(s)">
+										<Button name="ColorButton49" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox50" width="28" height="18" tooltip="Slot #51: Click to color selected channel(s)">
+										<Button name="ColorButton50" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox51" width="28" height="18" tooltip="Slot #52: Click to color selected channel(s)">
+										<Button name="ColorButton51" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox52" width="28" height="18" tooltip="Slot #53: Click to color selected channel(s)">
+										<Button name="ColorButton52" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox53" width="28" height="18" tooltip="Slot #54: Click to color selected channel(s)">
+										<Button name="ColorButton53" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox54" width="28" height="18" tooltip="Slot #55: Click to color selected channel(s)">
+										<Button name="ColorButton54" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox55" width="28" height="18" tooltip="Slot #56: Click to color selected channel(s)">
+										<Button name="ColorButton55" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox56" width="28" height="18" tooltip="Slot #57: Click to color selected channel(s)">
+										<Button name="ColorButton56" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox57" width="28" height="18" tooltip="Slot #58: Click to color selected channel(s)">
+										<Button name="ColorButton57" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox58" width="28" height="18" tooltip="Slot #59: Click to color selected channel(s)">
+										<Button name="ColorButton58" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox59" width="28" height="18" tooltip="Slot #60: Click to color selected channel(s)">
+										<Button name="ColorButton59" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox60" width="28" height="18" tooltip="Slot #61: Click to color selected channel(s)">
+										<Button name="ColorButton60" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox61" width="28" height="18" tooltip="Slot #62: Click to color selected channel(s)">
+										<Button name="ColorButton61" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox62" width="28" height="18" tooltip="Slot #63: Click to color selected channel(s)">
+										<Button name="ColorButton62" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox63" width="28" height="18" tooltip="Slot #64: Click to color selected channel(s)">
+										<Button name="ColorButton63" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+							</Horizontal>
+
+							<Horizontal margin='0' spacing='2'>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox64" width="28" height="18" tooltip="Slot #65: Click to color selected channel(s)">
+										<Button name="ColorButton64" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox65" width="28" height="18" tooltip="Slot #66: Click to color selected channel(s)">
+										<Button name="ColorButton65" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox66" width="28" height="18" tooltip="Slot #67: Click to color selected channel(s)">
+										<Button name="ColorButton66" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox67" width="28" height="18" tooltip="Slot #68: Click to color selected channel(s)">
+										<Button name="ColorButton67" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox68" width="28" height="18" tooltip="Slot #69: Click to color selected channel(s)">
+										<Button name="ColorButton68" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox69" width="28" height="18" tooltip="Slot #70: Click to color selected channel(s)">
+										<Button name="ColorButton69" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox70" width="28" height="18" tooltip="Slot #71: Click to color selected channel(s)">
+										<Button name="ColorButton70" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox71" width="28" height="18" tooltip="Slot #72: Click to color selected channel(s)">
+										<Button name="ColorButton71" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox72" width="28" height="18" tooltip="Slot #73: Click to color selected channel(s)">
+										<Button name="ColorButton72" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox73" width="28" height="18" tooltip="Slot #74: Click to color selected channel(s)">
+										<Button name="ColorButton73" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox74" width="28" height="18" tooltip="Slot #75: Click to color selected channel(s)">
+										<Button name="ColorButton74" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox75" width="28" height="18" tooltip="Slot #76: Click to color selected channel(s)">
+										<Button name="ColorButton75" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox76" width="28" height="18" tooltip="Slot #77: Click to color selected channel(s)">
+										<Button name="ColorButton76" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox77" width="28" height="18" tooltip="Slot #78: Click to color selected channel(s)">
+										<Button name="ColorButton77" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox78" width="28" height="18" tooltip="Slot #79: Click to color selected channel(s)">
+										<Button name="ColorButton78" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox79" width="28" height="18" tooltip="Slot #80: Click to color selected channel(s)">
+										<Button name="ColorButton79" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+							</Horizontal>
+
+							<Horizontal margin='0' spacing='2'>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox80" width="28" height="18" tooltip="Slot #81: Click to color selected channel(s)">
+										<Button name="ColorButton80" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox81" width="28" height="18" tooltip="Slot #82: Click to color selected channel(s)">
+										<Button name="ColorButton81" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox82" width="28" height="18" tooltip="Slot #83: Click to color selected channel(s)">
+										<Button name="ColorButton82" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox83" width="28" height="18" tooltip="Slot #84: Click to color selected channel(s)">
+										<Button name="ColorButton83" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox84" width="28" height="18" tooltip="Slot #85: Click to color selected channel(s)">
+										<Button name="ColorButton84" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox85" width="28" height="18" tooltip="Slot #86: Click to color selected channel(s)">
+										<Button name="ColorButton85" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox86" width="28" height="18" tooltip="Slot #87: Click to color selected channel(s)">
+										<Button name="ColorButton86" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox87" width="28" height="18" tooltip="Slot #88: Click to color selected channel(s)">
+										<Button name="ColorButton87" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox88" width="28" height="18" tooltip="Slot #89: Click to color selected channel(s)">
+										<Button name="ColorButton88" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox89" width="28" height="18" tooltip="Slot #90: Click to color selected channel(s)">
+										<Button name="ColorButton89" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox90" width="28" height="18" tooltip="Slot #91: Click to color selected channel(s)">
+										<Button name="ColorButton90" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox91" width="28" height="18" tooltip="Slot #92: Click to color selected channel(s)">
+										<Button name="ColorButton91" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox92" width="28" height="18" tooltip="Slot #93: Click to color selected channel(s)">
+										<Button name="ColorButton92" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox93" width="28" height="18" tooltip="Slot #94: Click to color selected channel(s)">
+										<Button name="ColorButton93" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox94" width="28" height="18" tooltip="Slot #95: Click to color selected channel(s)">
+										<Button name="ColorButton94" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+								<Vertical margin='0' spacing='0'>
+									<ColorBox name="ColorBox95" width="28" height="18" tooltip="Slot #96: Click to color selected channel(s)">
+										<Button name="ColorButton95" title="" width="28" height="18" options="transparent border" attach="left"/>
+									</ColorBox>
+								</Vertical>
+
+							</Horizontal>
+						</Vertical>
+					</DialogGroup>
+
+					<DialogGroup spacing='0' margin='0' options="secondary">
+
+						<Vertical spacing='2' margin='5'>
+
+							<Horizontal spacing='0' margin='0' attach="hcenter vcenter">
+								
+								<Toggle name="ColorEvents" title="Event" width='42' height='20' tooltip="Only color selected events"/>
+
+								<Space width='12'/>
+
+								<View width='0'/>
+								<ImageView style="SectionDividerV" options="colorize" size="0,0,2,20"/>
+								<View width='0'/>
+
+								<Space width='12'/>
+
+								<Toggle name="Tint" title="Tint" width='32' height='20' tooltip="Select channels, toggle Tint button on, select color from palette"/>
+								<Space width='5'/>
+								<Toggle name="Shade" title="Shade" width='46' height='20' tooltip="Select channels, toggle Shade button on, select color from palette"/>
+								<Space width='5'/>
+								<Toggle name="Gradient" title="Gradient" width='58' height='20' tooltip="Select channels, toggle Gradient button on, click first color, then second color"/>
+								
+								<Space width='12'/>
+
+								<View width='0'/>
+								<ImageView style="SectionDividerV" options="colorize" size="0,0,2,20"/>
+								<View width='0'/>
+																
+								<Space width='13'/>
+
+								<Toggle name="multipleFilters" title="Filter+" width='44' height='20' tooltip="Toggle Filter+ On for multiple filters, Off for one at a time"/>
+								<Space width='3'/>
+
+								<SelectBox name="filterMenu" width= "190" height="20" tooltip="Filter Track View">
+								</SelectBox>
+							</Horizontal>
+						</Vertical>
+					</DialogGroup>
+				</Vertical>
+			</View>
+		</Form>
+
+		<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- /////////////////////////////////////////// COLOR TOOLBAR EDITOR //////////////////////////////////////////////////// -->
+		<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+		<Form name="CTEditForm" title="Color Toolbar Palette Editor" options="windowmovable" windowstyle="floating above restorepos" style="CommandBarStyle">
+			<View size="0,0,0,0">
+				<Vertical spacing='0' margin='5' attach="all" options="unifysizes">
+
+					<DialogGroup spacing='0' margin='0' attach= "left right" options="secondary">
+						<!-- Header Objects -->
+						<Horizontal spacing='0' margin='5'>
+							<SelectBox name="FileMenu" options="transparent hidebutton" height="18" attach="vcenter" tooltip="Color Toolbar Menu" style="MenuSelectBox">
+								<Button title="▼" width='20' height='18' attach="vcenter" style="MyButton"/>
+							</SelectBox>
+
+							<Space width='10'/>
+
+							<Button name="ConformSong" title="Conform" height='24' attach="vcenter" tooltip="Conform song to current setup"/>
+
+							<Space width='25'/>
+							
+							<Button name="SlotNameButton96" title="No Match:" width='70' height='24' attach="vcenter" options="transparent border" tooltip="Click to edit No Match color (97)" />
+							<ColorBox name="ColorBox96" attach="vcenter" tooltip="No Match Color (97)" options="border ">
+								<Button name="ColorButton96" title="" width="18" height="18" options="transparent border" style="MyButton"/>
+							</ColorBox>
+							
+							<Space width='45'/>																																								  
+							
+							<Button name="SlotNameButton97" title="Bus:"  width='35' height='24' attach="vcenter" options="transparent border" tooltip="Click to edit Bus color (98)" style="MyButton"/>
+							<CheckBox name="IncludeBus" attach="vcenter" options="transparent border" tooltip="Color Bus channels uniformly (98)" style='MyCheckBox'/>
+
+							<ColorBox name="ColorBox97" attach="vcenter" tooltip="Bus color (98)">
+								<Button name="ColorButton97" title="" width="18" height="18" options="transparent border" style="MyButton"/>
+							</ColorBox>
+
+							<Space width='20'/>
+							<Button name="SlotNameButton98" title="FX:" width='35' height='24' attach="vcenter" options="transparent border" tooltip="Click to edit FX color (99)" style="MyButton"/>
+							<CheckBox name="IncludeFX" attach="vcenter" tooltip="Color FX channels uniformly (99)" style='MyCheckBox'/>
+
+							<ColorBox name="ColorBox98" attach="vcenter" tooltip="FX color (99)">
+								<Button name="ColorButton98" title="" width="18" height="18" options="transparent border" style="MyButton"/>
+							</ColorBox>
+
+							<Space width='20'/>
+							<Button name="SlotNameButton99" title="VCA:" width='35' height='24' attach="vcenter" options="transparent border" tooltip="Click to edit VCA color (100)" style="MyButton"/>
+							<CheckBox name="IncludeVCA" attach="vcenter" tooltip="Color VCA channels uniformly (100)" style='MyCheckBox'/>
+
+							<ColorBox name="ColorBox99" attach="vcenter" tooltip="VCA color (100)">
+								<Button name="ColorButton99" title="" width="18" height="18" options="transparent border" style="MyButton"/>
+							</ColorBox>
+
+							<Space width='20'/>
+							<Button name="SlotNameButton100" title="Aux:" width='35' height='24' attach="vcenter" options="transparent border" tooltip="Click to edit Aux color (101)" style="MyButton"/>
+							<CheckBox name="IncludeAux" attach="vcenter" tooltip="Color Aux channels uniformly (101)" style='MyCheckBox'/>
+
+							<ColorBox name="ColorBox100" attach="vcenter" tooltip="Aux color (101)">
+								<Button name="ColorButton100" title="" width="18" height="18" options="transparent border" style="MyButton"/>
+							</ColorBox>
+
+							<Space width='20'/>
+							<Button name="SlotNameButton101" title="Instr:" width='35' height='24' attach="vcenter" options="transparent border" tooltip="Click to edit Instr color (102)" style="MyButton"/>
+							<CheckBox name="IncludeInstr" attach="vcenter" tooltip="Color Instrument channels uniformly (102)" style='MyCheckBox'/>
+
+							<ColorBox name="ColorBox101" attach="vcenter" tooltip="Instr color (102)">
+								<Button name="ColorButton101" title="" width="18" height="18" options="transparent border" style="MyButton"/>
+							</ColorBox>
+
+							<Space width='150'/>
+
+							<Button name="Options" title="Options" width="54" height='24' attach="vcenter" tooltip="Color Toolbar Options"/>
+
+							<Space width='10'/>
+							<Button name="HelpButton" width="54" height="24" title="Help" attach="vcenter" tooltip="Online Help"/>
+							<Space width='10'/>
+
+							<TextBox name="Version" height="22" attach="vcenter" options="transparent" tooltip="Version" style="MyTextBoxSmall"/>
+						</Horizontal>
+						<!-- Header Objects -->
+					</DialogGroup>
+
+					<Space height='5'/>
+
+					<DialogGroup spacing='0' margin='0' attach= "left right" options="secondary">
+						<View name="ContextMenuDelegateTarget">
+							<Vertical spacing='5' margin='0'>
+								<Horizontal spacing='2' margin='2' attach= 'hcenter'>
+
+									<DialogGroup title="Standard Colors" attach= "left right" spacing='0' margin='0'>
+										<Vertical spacing='5' margin='0' >
+											<Space height='20'/>
+											<Horizontal spacing='0' margin='5'>
+												<Space width='5'/>
+												<Vertical spacing='5' margin='0'>
+													<Toggle name="SlotNumberButton0" title="1" width="25" height="18" tooltip="Slot #1: Click to select slot"/>
+													<Toggle name="SlotNumberButton1" title="2" width="25" height="18" tooltip="Slot #2: Click to select slot"/>
+													<Toggle name="SlotNumberButton2" title="3" width="25" height="18" tooltip="Slot #3: Click to select slot"/>
+													<Toggle name="SlotNumberButton3" title="4" width="25" height="18" tooltip="Slot #4: Click to select slot"/>
+													<Toggle name="SlotNumberButton4" title="5" width="25" height="18" tooltip="Slot #5: Click to select slot"/>
+													<Toggle name="SlotNumberButton5" title="6" width="25" height="18" tooltip="Slot #6: Click to select slot"/>
+													<Toggle name="SlotNumberButton6" title="7" width="25" height="18" tooltip="Slot #7: Click to select slot"/>
+													<Toggle name="SlotNumberButton7" title="8" width="25" height="18" tooltip="Slot #8: Click to select slot"/>
+													<Toggle name="SlotNumberButton8" title="9" width="25" height="18" tooltip="Slot #9: Click to select slot"/>
+													<Toggle name="SlotNumberButton9" title="10" width="25" height="18" tooltip="Slot #10: Click to select slot"/>
+													<Toggle name="SlotNumberButton10" title="11" width="25" height="18" tooltip="Slot #11: Click to select slot"/>
+													<Toggle name="SlotNumberButton11" title="12" width="25" height="18" tooltip="Slot #12: Click to select slot"/>
+													<Toggle name="SlotNumberButton12" title="13" width="25" height="18" tooltip="Slot #13: Click to select slot"/>
+													<Toggle name="SlotNumberButton13" title="14" width="25" height="18" tooltip="Slot #14: Click to select slot"/>
+													<Toggle name="SlotNumberButton14" title="15" width="25" height="18" tooltip="Slot #15: Click to select slot"/>
+													<Toggle name="SlotNumberButton15" title="16" width="25" height="18" tooltip="Slot #16: Click to select slot"/>											
+												</Vertical>
+
+												<Space width='3'/>
+
+												<Vertical spacing='5' margin='0'>
+													<ColorBox name="ColorBox0" width="25" height="18">
+														<Button name="ColorButton0" width="25" height="18" tooltip="Slot #1 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox1" width="25" height="18">
+														<Button name="ColorButton1" width="25" height="18" tooltip="Slot #2 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox2" width="25" height="18">
+														<Button name="ColorButton2" width="25" height="18" tooltip="Slot #3 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox3" width="25" height="18">
+														<Button name="ColorButton3" width="25" height="18" tooltip="Slot #4 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox4" width="25" height="18">
+														<Button name="ColorButton4" width="25" height="18" tooltip="Slot #5 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox5" width="25" height="18">
+														<Button name="ColorButton5" width="25" height="18" tooltip="Slot #6 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox6" width="25" height="18">
+														<Button name="ColorButton6" width="25" height="18" tooltip="Slot #7 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox7" width="25" height="18">
+														<Button name="ColorButton7" width="25" height="18" tooltip="Slot #8 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox8" width="25" height="18">
+														<Button name="ColorButton8" width="25" height="18" tooltip="Slot #9 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox9" width="25" height="18">
+														<Button name="ColorButton9" width="25" height="18" tooltip="Slot #10 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox10" width="25" height="18">
+														<Button name="ColorButton10" width="25" height="18" tooltip="Slot #11 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox11" width="25" height="18">
+														<Button name="ColorButton11" width="25" height="18" tooltip="Slot #12 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox12" width="25" height="18">
+														<Button name="ColorButton12" width="25" height="18" tooltip="Slot #13 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox13" width="25" height="18">
+														<Button name="ColorButton13" width="25" height="18" tooltip="Slot #14 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox14" width="25" height="18">
+														<Button name="ColorButton14" width="25" height="18" tooltip="Slot #15 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox15" width="25" height="18">
+														<Button name="ColorButton15" width="25" height="18" tooltip="Slot #16 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>										
+												</Vertical>
+
+												<Space width='3'/>
+
+												<Vertical spacing='5' margin='0'>
+													<EditBox name="SlotName0" width="100" height="18" attach="left" tooltip="Slot #1 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName1" width="100" height="18" attach="left" tooltip="Slot #2 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName2" width="100" height="18" attach="left" tooltip="Slot #3 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName3" width="100" height="18" attach="left" tooltip="Slot #4 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName4" width="100" height="18" attach="left" tooltip="Slot #5 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName5" width="100" height="18" attach="left" tooltip="Slot #6 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName6" width="100" height="18" attach="left" tooltip="Slot #7 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName7" width="100" height="18" attach="left" tooltip="Slot #8 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName8" width="100" height="18" attach="left" tooltip="Slot #9 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName9" width="100" height="18" attach="left" tooltip="Slot #10 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName10" width="100" height="18" attach="left" tooltip="Slot #11 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName11" width="100" height="18" attach="left" tooltip="Slot #12 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName12" width="100" height="18" attach="left" tooltip="Slot #13 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName13" width="100" height="18" attach="left" tooltip="Slot #14 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName14" width="100" height="18" attach="left" tooltip="Slot #15 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName15" width="100" height="18" attach="left" tooltip="Slot #16 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+												</Vertical>
+
+												<Space width='15'/>
+
+												<Vertical spacing='5' margin='0'>
+													<Toggle name="SlotNumberButton16" title="17" width="25" height="18" tooltip="Slot #17: Click to select slot"/>
+													<Toggle name="SlotNumberButton17" title="18" width="25" height="18" tooltip="Slot #18: Click to select slot"/>
+													<Toggle name="SlotNumberButton18" title="19" width="25" height="18" tooltip="Slot #19: Click to select slot"/>
+													<Toggle name="SlotNumberButton19" title="20" width="25" height="18" tooltip="Slot #20: Click to select slot"/>
+													<Toggle name="SlotNumberButton20" title="21" width="25" height="18" tooltip="Slot #21: Click to select slot"/>
+													<Toggle name="SlotNumberButton21" title="22" width="25" height="18" tooltip="Slot #22: Click to select slot"/>
+													<Toggle name="SlotNumberButton22" title="23" width="25" height="18" tooltip="Slot #23: Click to select slot"/>
+													<Toggle name="SlotNumberButton23" title="24" width="25" height="18" tooltip="Slot #24: Click to select slot"/>
+													<Toggle name="SlotNumberButton24" title="25" width="25" height="18" tooltip="Slot #25: Click to select slot"/>
+													<Toggle name="SlotNumberButton25" title="26" width="25" height="18" tooltip="Slot #26: Click to select slot"/>
+													<Toggle name="SlotNumberButton26" title="27" width="25" height="18" tooltip="Slot #27: Click to select slot"/>
+													<Toggle name="SlotNumberButton27" title="28" width="25" height="18" tooltip="Slot #28: Click to select slot"/>
+													<Toggle name="SlotNumberButton28" title="29" width="25" height="18" tooltip="Slot #29: Click to select slot"/>
+													<Toggle name="SlotNumberButton29" title="30" width="25" height="18" tooltip="Slot #30: Click to select slot"/>
+													<Toggle name="SlotNumberButton30" title="31" width="25" height="18" tooltip="Slot #31: Click to select slot"/>
+													<Toggle name="SlotNumberButton31" title="32" width="25" height="18" tooltip="Slot #32: Click to select slot"/>										
+												</Vertical>
+
+												<Space width='3'/>
+
+												<Vertical spacing='5' margin='0'>
+													<ColorBox name="ColorBox16" width="25" height="18">
+														<Button name="ColorButton16" width="25" height="18" tooltip="Slot #17 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox17" width="25" height="18">
+														<Button name="ColorButton17" width="25" height="18" tooltip="Slot #18 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox18" width="25" height="18">
+														<Button name="ColorButton18" width="25" height="18" tooltip="Slot #19 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox19" width="25" height="18">
+														<Button name="ColorButton19" width="25" height="18" tooltip="Slot #20 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox20" width="25" height="18">
+														<Button name="ColorButton20" width="25" height="18" tooltip="Slot #21 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox21" width="25" height="18">
+														<Button name="ColorButton21" width="25" height="18" tooltip="Slot #22 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox22" width="25" height="18">
+														<Button name="ColorButton22" width="25" height="18" tooltip="Slot #23 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox23" width="25" height="18">
+														<Button name="ColorButton23" width="25" height="18" tooltip="Slot #24 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox24" width="25" height="18">
+														<Button name="ColorButton24" width="25" height="18" tooltip="Slot #25 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox25" width="25" height="18">
+														<Button name="ColorButton25" width="25" height="18" tooltip="Slot #26 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox26" width="25" height="18">
+														<Button name="ColorButton26" width="25" height="18" tooltip="Slot #27 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox27" width="25" height="18">
+														<Button name="ColorButton27" width="25" height="18" tooltip="Slot #28 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox28" width="25" height="18">
+														<Button name="ColorButton28" width="25" height="18" tooltip="Slot #29 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox29" width="25" height="18">
+														<Button name="ColorButton29" width="25" height="18" tooltip="Slot #30 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox30" width="25" height="18">
+														<Button name="ColorButton30" width="25" height="18" tooltip="Slot #31 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox31" width="25" height="18">
+														<Button name="ColorButton31" width="25" height="18" tooltip="Slot #32 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+												</Vertical>
+
+												<Space width='3'/>
+
+												<Vertical spacing='5' margin='0'>
+													<EditBox name="SlotName16" width="100" height="18" attach="left" tooltip="Slot #17 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName17" width="100" height="18" attach="left" tooltip="Slot #18 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName18" width="100" height="18" attach="left" tooltip="Slot #19 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName19" width="100" height="18" attach="left" tooltip="Slot #20 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName20" width="100" height="18" attach="left" tooltip="Slot #21 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName21" width="100" height="18" attach="left" tooltip="Slot #22 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName22" width="100" height="18" attach="left" tooltip="Slot #23 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName23" width="100" height="18" attach="left" tooltip="Slot #24 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName24" width="100" height="18" attach="left" tooltip="Slot #25 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName25" width="100" height="18" attach="left" tooltip="Slot #26 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName26" width="100" height="18" attach="left" tooltip="Slot #27 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName27" width="100" height="18" attach="left" tooltip="Slot #28 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName28" width="100" height="18" attach="left" tooltip="Slot #29 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName29" width="100" height="18" attach="left" tooltip="Slot #30 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName30" width="100" height="18" attach="left" tooltip="Slot #31 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName31" width="100" height="18" attach="left" tooltip="Slot #32 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+												</Vertical>
+
+												<Space width='15'/>
+
+												<Vertical spacing='5' margin='0'>
+													<Toggle name="SlotNumberButton32" title="33" width="25" height="18" tooltip="Slot #33: Click to select slot"/>
+													<Toggle name="SlotNumberButton33" title="34" width="25" height="18" tooltip="Slot #34: Click to select slot"/>
+													<Toggle name="SlotNumberButton34" title="35" width="25" height="18" tooltip="Slot #35: Click to select slot"/>
+													<Toggle name="SlotNumberButton35" title="36" width="25" height="18" tooltip="Slot #36: Click to select slot"/>
+													<Toggle name="SlotNumberButton36" title="37" width="25" height="18" tooltip="Slot #37: Click to select slot"/>
+													<Toggle name="SlotNumberButton37" title="38" width="25" height="18" tooltip="Slot #38: Click to select slot"/>
+													<Toggle name="SlotNumberButton38" title="39" width="25" height="18" tooltip="Slot #39: Click to select slot"/>
+													<Toggle name="SlotNumberButton39" title="40" width="25" height="18" tooltip="Slot #40: Click to select slot"/>
+													<Toggle name="SlotNumberButton40" title="41" width="25" height="18" tooltip="Slot #41: Click to select slot"/>
+													<Toggle name="SlotNumberButton41" title="42" width="25" height="18" tooltip="Slot #42: Click to select slot"/>
+													<Toggle name="SlotNumberButton42" title="43" width="25" height="18" tooltip="Slot #43: Click to select slot"/>
+													<Toggle name="SlotNumberButton43" title="44" width="25" height="18" tooltip="Slot #44: Click to select slot"/>
+													<Toggle name="SlotNumberButton44" title="45" width="25" height="18" tooltip="Slot #45: Click to select slot"/>
+													<Toggle name="SlotNumberButton45" title="46" width="25" height="18" tooltip="Slot #46: Click to select slot"/>
+													<Toggle name="SlotNumberButton46" title="47" width="25" height="18" tooltip="Slot #47: Click to select slot"/>
+													<Toggle name="SlotNumberButton47" title="48" width="25" height="18" tooltip="Slot #48: Click to select slot"/>											
+												</Vertical>
+
+												<Space width='3'/>
+
+												<Vertical spacing='5' margin='0'>
+													<ColorBox name="ColorBox32" width="25" height="18">
+														<Button name="ColorButton32" width="25" height="18" tooltip="Slot #33 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox33" width="25" height="18">
+														<Button name="ColorButton33" width="25" height="18" tooltip="Slot #34 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox34" width="25" height="18">
+														<Button name="ColorButton34" width="25" height="18" tooltip="Slot #35 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox35" width="25" height="18">
+														<Button name="ColorButton35" width="25" height="18" tooltip="Slot #36 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox36" width="25" height="18">
+														<Button name="ColorButton36" width="25" height="18" tooltip="Slot #37 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox37" width="25" height="18">
+														<Button name="ColorButton37" width="25" height="18" tooltip="Slot #38 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox38" width="25" height="18">
+														<Button name="ColorButton38" width="25" height="18" tooltip="Slot #39 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox39" width="25" height="18">
+														<Button name="ColorButton39" width="25" height="18" tooltip="Slot #40 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox40" width="25" height="18">
+														<Button name="ColorButton40" width="25" height="18" tooltip="Slot #41 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox41" width="25" height="18">
+														<Button name="ColorButton41" width="25" height="18" tooltip="Slot #42 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox42" width="25" height="18">
+														<Button name="ColorButton42" width="25" height="18" tooltip="Slot #43 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox43" width="25" height="18">
+														<Button name="ColorButton43" width="25" height="18" tooltip="Slot #44 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox44" width="25" height="18">
+														<Button name="ColorButton44" width="25" height="18" tooltip="Slot #45 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox45" width="25" height="18">
+														<Button name="ColorButton45" width="25" height="18" tooltip="Slot #46 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox46" width="25" height="18">
+														<Button name="ColorButton46" width="25" height="18" tooltip="Slot #47 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox47" width="25" height="18">
+														<Button name="ColorButton47" width="25" height="18" tooltip="Slot #48 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+												</Vertical>
+
+												<Space width='3'/>
+
+												<Vertical spacing='5' margin='0'>
+													<EditBox name="SlotName32" width="100" height="18" attach="left" tooltip="Slot #33 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName33" width="100" height="18" attach="left" tooltip="Slot #34 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName34" width="100" height="18" attach="left" tooltip="Slot #35 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName35" width="100" height="18" attach="left" tooltip="Slot #36 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName36" width="100" height="18" attach="left" tooltip="Slot #37 Name: Click Slot# FIRST to Add/Edit Name/Keywords" />
+													<EditBox name="SlotName37" width="100" height="18" attach="left" tooltip="Slot #38 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName38" width="100" height="18" attach="left" tooltip="Slot #39 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName39" width="100" height="18" attach="left" tooltip="Slot #40 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName40" width="100" height="18" attach="left" tooltip="Slot #41 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName41" width="100" height="18" attach="left" tooltip="Slot #42 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName42" width="100" height="18" attach="left" tooltip="Slot #43 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName43" width="100" height="18" attach="left" tooltip="Slot #44 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName44" width="100" height="18" attach="left" tooltip="Slot #45 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName45" width="100" height="18" attach="left" tooltip="Slot #46 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName46" width="100" height="18" attach="left" tooltip="Slot #47 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName47" width="100" height="18" attach="left" tooltip="Slot #48 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+												</Vertical>
+											</Horizontal>
+										</Vertical>	
+									</DialogGroup>
+
+									<Space width='3'/>
+
+									<DialogGroup  title="Custom Colors"   attach= "left right" spacing='0' margin='0'>
+										<Vertical spacing='5' margin='0' >
+											<Space height='20'/>	
+											
+											<Horizontal spacing='0' margin='5'>
+
+												<Space width='5'/>
+
+												<Vertical spacing='5' margin='0'>
+													<Toggle name="SlotNumberButton48" title="49" width="25" height="18" tooltip="Slot #49: Click to select slot"/>
+													<Toggle name="SlotNumberButton49" title="50" width="25" height="18" tooltip="Slot #50: Click to select slot"/>
+													<Toggle name="SlotNumberButton50" title="51" width="25" height="18" tooltip="Slot #51: Click to select slot"/>
+													<Toggle name="SlotNumberButton51" title="52" width="25" height="18" tooltip="Slot #52: Click to select slot"/>
+													<Toggle name="SlotNumberButton52" title="53" width="25" height="18" tooltip="Slot #53: Click to select slot"/>
+													<Toggle name="SlotNumberButton53" title="54" width="25" height="18" tooltip="Slot #54: Click to select slot"/>
+													<Toggle name="SlotNumberButton54" title="55" width="25" height="18" tooltip="Slot #55: Click to select slot"/>
+													<Toggle name="SlotNumberButton55" title="56" width="25" height="18" tooltip="Slot #56: Click to select slot"/>
+													<Toggle name="SlotNumberButton56" title="57" width="25" height="18" tooltip="Slot #57: Click to select slot"/>
+													<Toggle name="SlotNumberButton57" title="58" width="25" height="18" tooltip="Slot #58: Click to select slot"/>
+													<Toggle name="SlotNumberButton58" title="59" width="25" height="18" tooltip="Slot #59: Click to select slot"/>
+													<Toggle name="SlotNumberButton59" title="60" width="25" height="18" tooltip="Slot #60: Click to select slot"/>
+													<Toggle name="SlotNumberButton60" title="61" width="25" height="18" tooltip="Slot #61: Click to select slot"/>
+													<Toggle name="SlotNumberButton61" title="62" width="25" height="18" tooltip="Slot #62: Click to select slot"/>
+													<Toggle name="SlotNumberButton62" title="63" width="25" height="18" tooltip="Slot #63: Click to select slot"/>
+													<Toggle name="SlotNumberButton63" title="64" width="25" height="18" tooltip="Slot #64: Click to select slot"/>
+												</Vertical>
+
+												<Space width='3'/>
+
+												<Vertical spacing='5' margin='0'>
+													<ColorBox name="ColorBox48" width="25" height="18">
+														<Button name="ColorButton48" width="25" height="18" tooltip="Slot #49 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox49" width="25" height="18">
+														<Button name="ColorButton49" width="25" height="18" tooltip="Slot #50 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox50" width="25" height="18">
+														<Button name="ColorButton50" width="25" height="18" tooltip="Slot #51 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox51" width="25" height="18">
+														<Button name="ColorButton51" width="25" height="18" tooltip="Slot #52 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox52" width="25" height="18">
+														<Button name="ColorButton52" width="25" height="18" tooltip="Slot #53 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox53" width="25" height="18">
+														<Button name="ColorButton53" width="25" height="18" tooltip="Slot #54 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox54" width="25" height="18">
+														<Button name="ColorButton54" width="25" height="18" tooltip="Slot #55 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox55" width="25" height="18">
+														<Button name="ColorButton55" width="25" height="18" tooltip="Slot #56 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox56" width="25" height="18">
+														<Button name="ColorButton56" width="25" height="18" tooltip="Slot #57 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox57" width="25" height="18">
+														<Button name="ColorButton57" width="25" height="18" tooltip="Slot #58 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox58" width="25" height="18">
+														<Button name="ColorButton58" width="25" height="18" tooltip="Slot #59 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox59" width="25" height="18">
+														<Button name="ColorButton59" width="25" height="18" tooltip="Slot #60 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox60" width="25" height="18">
+														<Button name="ColorButton60" width="25" height="18" tooltip="Slot #61 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox61" width="25" height="18">
+														<Button name="ColorButton61" width="25" height="18" tooltip="Slot #62 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox62" width="25" height="18">
+														<Button name="ColorButton62" width="25" height="18" tooltip="Slot #63 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox63" width="25" height="18">
+														<Button name="ColorButton63" width="25" height="18" tooltip="Slot #64 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+												</Vertical>
+
+												<Space width='3'/>
+
+												<Vertical spacing='5' margin='0'>
+													<EditBox name="SlotName48" width="100" height="18" attach="left" tooltip="Slot #49 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName49" width="100" height="18" attach="left" tooltip="Slot #50 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName50" width="100" height="18" attach="left" tooltip="Slot #51 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName51" width="100" height="18" attach="left" tooltip="Slot #52 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName52" width="100" height="18" attach="left" tooltip="Slot #53 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName53" width="100" height="18" attach="left" tooltip="Slot #54 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName54" width="100" height="18" attach="left" tooltip="Slot #55 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName55" width="100" height="18" attach="left" tooltip="Slot #56 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName56" width="100" height="18" attach="left" tooltip="Slot #57 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName57" width="100" height="18" attach="left" tooltip="Slot #58 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName58" width="100" height="18" attach="left" tooltip="Slot #59 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName59" width="100" height="18" attach="left" tooltip="Slot #60 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName60" width="100" height="18" attach="left" tooltip="Slot #61 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName61" width="100" height="18" attach="left" tooltip="Slot #62 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName62" width="100" height="18" attach="left" tooltip="Slot #63 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName63" width="100" height="18" attach="left" tooltip="Slot #64 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+												</Vertical>
+
+												<Space width='15'/>
+
+												<Vertical spacing='5' margin='0'>
+													<Toggle name="SlotNumberButton64" title="65" width="25" height="18" tooltip="Slot #65: Click to select slot"/>
+													<Toggle name="SlotNumberButton65" title="66" width="25" height="18" tooltip="Slot #66: Click to select slot"/>
+													<Toggle name="SlotNumberButton66" title="67" width="25" height="18" tooltip="Slot #67: Click to select slot"/>
+													<Toggle name="SlotNumberButton67" title="68" width="25" height="18" tooltip="Slot #68: Click to select slot"/>
+													<Toggle name="SlotNumberButton68" title="69" width="25" height="18" tooltip="Slot #69: Click to select slot"/>
+													<Toggle name="SlotNumberButton69" title="70" width="25" height="18" tooltip="Slot #70: Click to select slot"/>
+													<Toggle name="SlotNumberButton70" title="71" width="25" height="18" tooltip="Slot #71: Click to select slot"/>
+													<Toggle name="SlotNumberButton71" title="72" width="25" height="18" tooltip="Slot #72: Click to select slot"/>
+													<Toggle name="SlotNumberButton72" title="73" width="25" height="18" tooltip="Slot #73: Click to select slot"/>
+													<Toggle name="SlotNumberButton73" title="74" width="25" height="18" tooltip="Slot #74: Click to select slot"/>
+													<Toggle name="SlotNumberButton74" title="75" width="25" height="18" tooltip="Slot #75: Click to select slot"/>
+													<Toggle name="SlotNumberButton75" title="76" width="25" height="18" tooltip="Slot #76: Click to select slot"/>
+													<Toggle name="SlotNumberButton76" title="77" width="25" height="18" tooltip="Slot #77: Click to select slot"/>
+													<Toggle name="SlotNumberButton77" title="78" width="25" height="18" tooltip="Slot #78: Click to select slot"/>
+													<Toggle name="SlotNumberButton78" title="79" width="25" height="18" tooltip="Slot #79: Click to select slot"/>
+													<Toggle name="SlotNumberButton79" title="80" width="25" height="18" tooltip="Slot #80: Click to select slot"/>
+												</Vertical>
+
+												<Space width='3'/>
+
+												<Vertical spacing='5' margin='0'>
+													<ColorBox name="ColorBox64" width="25" height="18">
+														<Button name="ColorButton64" width="25" height="18" tooltip="Slot #65 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox65" width="25" height="18">
+														<Button name="ColorButton65" width="25" height="18" tooltip="Slot #66 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox66" width="25" height="18">
+														<Button name="ColorButton66" width="25" height="18" tooltip="Slot #67 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox67" width="25" height="18">
+														<Button name="ColorButton67" width="25" height="18" tooltip="Slot #68 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox68" width="25" height="18">
+														<Button name="ColorButton68" width="25" height="18" tooltip="Slot #69 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox69" width="25" height="18">
+														<Button name="ColorButton69" width="25" height="18" tooltip="Slot #70 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox70" width="25" height="18">
+														<Button name="ColorButton70" width="25" height="18" tooltip="Slot #71 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox71" width="25" height="18">
+														<Button name="ColorButton71" width="25" height="18" tooltip="Slot #72 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox72" width="25" height="18">
+														<Button name="ColorButton72" width="25" height="18" tooltip="Slot #73 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox73" width="25" height="18">
+														<Button name="ColorButton73" width="25" height="18" tooltip="Slot #74 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox74" width="25" height="18">
+														<Button name="ColorButton74" width="25" height="18" tooltip="Slot #75 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox75" width="25" height="18">
+														<Button name="ColorButton75" width="25" height="18" tooltip="Slot #76 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox76" width="25" height="18">
+														<Button name="ColorButton76" width="25" height="18" tooltip="Slot #77 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox77" width="25" height="18">
+														<Button name="ColorButton77" width="25" height="18" tooltip="Slot #78 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox78" width="25" height="18">
+														<Button name="ColorButton78" width="25" height="18" tooltip="Slot #79 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox79" width="25" height="18">
+														<Button name="ColorButton79" width="25" height="18" tooltip="Slot #89 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+												</Vertical>
+
+												<Space width='3'/>
+
+												<Vertical spacing='5' margin='0'>
+													<EditBox name="SlotName64" width="100" height="18" attach="left" tooltip="Slot #65 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName65" width="100" height="18" attach="left" tooltip="Slot #66 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName66" width="100" height="18" attach="left" tooltip="Slot #67 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName67" width="100" height="18" attach="left" tooltip="Slot #68 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName68" width="100" height="18" attach="left" tooltip="Slot #69 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName69" width="100" height="18" attach="left" tooltip="Slot #70 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName70" width="100" height="18" attach="left" tooltip="Slot #71 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName71" width="100" height="18" attach="left" tooltip="Slot #72 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName72" width="100" height="18" attach="left" tooltip="Slot #73 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName73" width="100" height="18" attach="left" tooltip="Slot #74 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName74" width="100" height="18" attach="left" tooltip="Slot #75 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName75" width="100" height="18" attach="left" tooltip="Slot #76 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName76" width="100" height="18" attach="left" tooltip="Slot #77 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName77" width="100" height="18" attach="left" tooltip="Slot #78 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName78" width="100" height="18" attach="left" tooltip="Slot #79 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName79" width="100" height="18" attach="left" tooltip="Slot #80 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+												</Vertical>
+
+												<Space width='15'/>
+
+												<Vertical spacing='5' margin='0'>
+													<Toggle name="SlotNumberButton80" title="81" width="25" height="18" tooltip="Slot #81: Click to select slot"/>
+													<Toggle name="SlotNumberButton81" title="82" width="25" height="18" tooltip="Slot #82: Click to select slot"/>
+													<Toggle name="SlotNumberButton82" title="83" width="25" height="18" tooltip="Slot #83: Click to select slot"/>
+													<Toggle name="SlotNumberButton83" title="84" width="25" height="18" tooltip="Slot #84: Click to select slot"/>
+													<Toggle name="SlotNumberButton84" title="85" width="25" height="18" tooltip="Slot #85: Click to select slot"/>
+													<Toggle name="SlotNumberButton85" title="86" width="25" height="18" tooltip="Slot #86: Click to select slot"/>
+													<Toggle name="SlotNumberButton86" title="87" width="25" height="18" tooltip="Slot #87: Click to select slot"/>
+													<Toggle name="SlotNumberButton87" title="88" width="25" height="18" tooltip="Slot #88: Click to select slot"/>
+													<Toggle name="SlotNumberButton88" title="89" width="25" height="18" tooltip="Slot #89: Click to select slot"/>
+													<Toggle name="SlotNumberButton89" title="90" width="25" height="18" tooltip="Slot #90: Click to select slot"/>
+													<Toggle name="SlotNumberButton90" title="91" width="25" height="18" tooltip="Slot #91: Click to select slot"/>
+													<Toggle name="SlotNumberButton91" title="92" width="25" height="18" tooltip="Slot #92: Click to select slot"/>
+													<Toggle name="SlotNumberButton92" title="93" width="25" height="18" tooltip="Slot #93: Click to select slot"/>
+													<Toggle name="SlotNumberButton93" title="94" width="25" height="18" tooltip="Slot #94: Click to select slot"/>
+													<Toggle name="SlotNumberButton94" title="95" width="25" height="18" tooltip="Slot #95: Click to select slot"/>
+													<Toggle name="SlotNumberButton95" title="96" width="25" height="18" tooltip="Slot #96: Click to select slot"/>
+												</Vertical>
+
+												<Space width='3'/>
+
+												<Vertical spacing='5' margin='0'>
+													<ColorBox name="ColorBox80" width="25" height="18">
+														<Button name="ColorButton80" width="25" height="18" tooltip="Slot #81 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox81" width="25" height="18">
+														<Button name="ColorButton81" width="25" height="18" tooltip="Slot #82 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox82" width="25" height="18">
+														<Button name="ColorButton82" width="25" height="18" tooltip="Slot #83 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox83" width="25" height="18">
+														<Button name="ColorButton83" width="25" height="18" tooltip="Slot #84 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox84" width="25" height="18">
+														<Button name="ColorButton84" width="25" height="18" tooltip="Slot #85 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox85" width="25" height="18">
+														<Button name="ColorButton85" width="25" height="18" tooltip="Slot #86 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox86" width="25" height="18">
+														<Button name="ColorButton86" width="25" height="18" tooltip="Slot #87 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox87" width="25" height="18">
+														<Button name="ColorButton87" width="25" height="18" tooltip="Slot #88 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox88" width="25" height="18">
+														<Button name="ColorButton88" width="25" height="18" tooltip="Slot #89 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox89" width="25" height="18">
+														<Button name="ColorButton89" width="25" height="18" tooltip="Slot #90 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox90" width="25" height="18">
+														<Button name="ColorButton90" width="25" height="18" tooltip="Slot #91 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox91" width="25" height="18">
+														<Button name="ColorButton91" width="25" height="18" tooltip="Slot #92 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox92" width="25" height="18">
+														<Button name="ColorButton92" width="25" height="18" tooltip="Slot #93 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox93" width="25" height="18">
+														<Button name="ColorButton93" width="25" height="18" tooltip="Slot #94 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox94" width="25" height="18">
+														<Button name="ColorButton94" width="25" height="18" tooltip="Slot #95 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+													<ColorBox name="ColorBox95" width="25" height="18">
+														<Button name="ColorButton95" width="25" height="18" tooltip="Slot #96 Color: Click to select slot" options="border transparent hidetext hidefocus hidebutton"/>
+													</ColorBox>
+												</Vertical>
+
+												<Space width='3'/>
+
+												<Vertical spacing='5' margin='0'>
+													<EditBox name="SlotName80" width="100" height="18" attach="left" tooltip="Slot #81 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName81" width="100" height="18" attach="left" tooltip="Slot #82 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName82" width="100" height="18" attach="left" tooltip="Slot #83 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName83" width="100" height="18" attach="left" tooltip="Slot #84 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName84" width="100" height="18" attach="left" tooltip="Slot #85 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName85" width="100" height="18" attach="left" tooltip="Slot #86 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName86" width="100" height="18" attach="left" tooltip="Slot #87 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName87" width="100" height="18" attach="left" tooltip="Slot #88 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName88" width="100" height="18" attach="left" tooltip="Slot #89 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName89" width="100" height="18" attach="left" tooltip="Slot #90 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName90" width="100" height="18" attach="left" tooltip="Slot #91 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName91" width="100" height="18" attach="left" tooltip="Slot #92 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName92" width="100" height="18" attach="left" tooltip="Slot #93 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName93" width="100" height="18" attach="left" tooltip="Slot #94 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName94" width="100" height="18" attach="left" tooltip="Slot #95 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+													<EditBox name="SlotName95" width="100" height="18" attach="left" tooltip="Slot #96 Name: Click Slot# FIRST to Add/Edit Name/Keywords"/>
+												</Vertical>
+											</Horizontal>
+										</Vertical>
+									</DialogGroup>
+								</Horizontal>
+							
+								<Horizontal spacing='5' margin='5' attach="hcenter vcenter">
+									<!-- <Space width='1'/> -->
+									<TextBox name="IndexLabel" width="25" attach="vcenter" tooltip="Current Slot Number" />
+									<ColorBox name="keywordColorBox" width="18" height='18' attach="vcenter" tooltip="Slot color" />
+									<TextBox name="SlotNameLabel" width="100" height="18" attach="vcenter" tooltip="Current Slot Name" />
+									<Label title="Keywords:" width="60" height="18" attach="vcenter" />
+									<EditBox name="KeyWords" width="800" height="18" attach="vcenter" tooltip="Current Slot Keywords: Add/Edit associated keywords separated by commas" style= "Keywords" />
+								</Horizontal>
+							</Vertical>
+						</View>
+					</DialogGroup>
+					
+					<Space height='5'/>
+
+					<DialogGroup spacing='0' margin='0' attach= "left right" options="secondary">
+
+						<Vertical spacing='0' margin='0'>
+							
+							<Horizontal spacing='5' margin='5' attach="hcenter vcenter">
+							
+							    <Space width='10'/>	
+								
+								<Toggle name="cutName" title="Cut Name" height='24' attach="vcenter" tooltip="Cut Name/Keywords"/>
+								<Button name="pasteName" title="Paste Name" height='24' attach="vcenter" tooltip="Paste Name/Keywords"/>
+								<View width='3'/>
+								<ImageView style="SectionDividerV" options="colorize" size="0,0,2,30"/>
+								<View width='3'/>
+								<Button name="darkerPalette" title="Darken 1-48" height='24' attach="vcenter" tooltip="Darken 1-48 colors (Use Reset 1-48 to start over)"/>
+								<Button name="lighterPalette" title="Lighten 1-48" height='24' attach="vcenter" tooltip="Lighten 1-48 colors (use Reset 1-48 to start over)"/>
+								<Button name="resetPalette" title="Reset 1-48" height='24' attach="vcenter" tooltip="Reset 1-48 to last saved colors. Use Reset to Default to get Default colors"/>
+								<View width='3'/>
+								<ImageView style="SectionDividerV" options="colorize" size="0,0,2,30"/>
+								<View width='3'/>
+								<Label title="Copy Color to Slot [49-102]:" attach="vcenter" style='MyLabel'/>
+								<Toggle name="copyColor" title="Copy Color" height='24' attach="vcenter" tooltip="Copy Color"/>
+								<Button name="pasteColor" title="Paste Color" height='24' attach="vcenter" tooltip="Paste Color"/>
+								<CheckBox name="moveNameWithColor" title="Move Name with Color" attach="vcenter" tooltip="Moves Name when pasting Color 49-72"/>
+							</Horizontal>
+
+							<Horizontal spacing='5' margin='5' attach="hcenter vcenter">
+							
+								<Space width='16'/>							
+
+								<Label title="Edit Color [49-102]:" name="EditColorTitle" attach="vcenter" />
+								<TextBox name="EditColorIndexLabel" width="25" height='18' attach="vcenter" tooltip="Current Slot Number" />
+								<ColorBox name="editColorBox" width="18" height='18' attach="vcenter" tooltip="Slot color" />
+								<Label title="Hex:" height='18' options="transparent" attach="vcenter" tooltip="Hex" style='MyLabel'/>
+								<EditBox name="HexColorNumber" width='57' height='18' attach="vcenter" tooltip="6 character Hex (000000-FFFFFF) values" />
+								<Space width='1'/>
+								<ImageView style="SectionDividerV" options="colorize" size="0,0,2,30"/>
+								<Space width='1'/>
+								<Label title="Hue" height='18' attach="vcenter" options="transparent" tooltip="Hue (0-360) values" style='MyLabel'/>
+								<EditBox name="hue" width='36' height='18' attach="vcenter" tooltip="Hue (0-360) values"/>
+								<Slider name="SliderHue" width="120" height="15" attach="vcenter" align="hcenter" options="border" tooltip="Hue Slider (0-360)"/>
+								<Space width='3'/>
+								<Label title="Sat %" height='18' tooltip="Saturation (0-100)" attach="vcenter" style='MyLabel'/>
+								<EditBox name="sat" width='36' attach="vcenter" tooltip="Saturation (0-100)"/>
+								<Slider name="SliderSat" width="120" height="15" attach="vcenter" options="colorize" tooltip="Saturation Slider (1-100)"/>
+								<Space width='3'/>
+								<Label title="Lum %" height='18' attach="vcenter" tooltip="Luminance (0-100)" />
+								<EditBox name="lum" width='36' attach="vcenter" tooltip="Luminance (0-100)"/>
+								<Slider name="SliderLum" width="120" height="15" attach="vcenter" tooltip="Luminance Slider (0-100)"/>
+								<Space width='1'/>
+								<ImageView style="SectionDividerV" options="colorize" size="0,0,2,30"/>
+								<Space width='3'/>
+								<Button name="resetColor" title="Reset" width="50" height='24' attach="vcenter" tooltip="Reset changes back to original color"/>
+								<Space width='6'/>
+							</Horizontal>
+						</Vertical>
+					</DialogGroup>
+					<!-- <Space height='1'/> -->
+				</Vertical>
+			</View>
+		</Form>
+
+		<!-- ******************************************************************************************** -->
+		<!-- Command Bar Color Toolbar Options-->
+		<!-- ******************************************************************************************** -->
+		<Form name="CTOptions" title="Color Toolbar Options" options="windowmovable" windowstyle="floating above  restorepos" style="CommandBarStyle">
+			<View size="0,0,0,0">
+				<Vertical spacing='0' margin='5'>
+					<CheckBox name="iconLookup" title="Load Icons" attach="vcenter" tooltip="Load icons Version 6 or greater"/>
+					<CheckBox name="filterPlusState" title="Filter+ Mode On" attach="vcenter" tooltip="Filter+ toggle button default state is set to ON."/>
+					<CheckBox name="conformArrangerTrack" title="Conform Arranger Track" attach="vcenter" tooltip="Conform Arranger Track"/>
+					<Horizontal spacing='5' margin='0'  >
+						<CheckBox name="lockColor" title="Lock Manual Colors" attach="vcenter" tooltip="Lock manual changes to channel/track colors"/>
+						<Button name="resetLock" title="Reset Selected" height='24' attach="vcenter" tooltip="Reset Lock(s)"/>
+					</Horizontal>
+				</Vertical>
+			</View>
+		</Form>
+
+		<!-- ******************************************************************************************** -->
+		<!-- Command Bar Context Menu Delegate Target-->
+		<!-- ******************************************************************************************** -->
+		<Form name="ContextMenuDelegateTarget">
+			<AlignView attach="left right hfit" name="://Workspace/studioapp/~/CustomParams/addInPanelAlign">
+				<View name="ContextMenuDelegate">
+					<Horizontal margin="0" spacing="0" attach="all">
+						<View name="@child[$i]" sizeLimits="none"/>
+					</Horizontal>
+				</View>
+			</AlignView>
+		</Form>
+
+		<!-- ******************************************************************************************** -->
+		<!-- Command Bar Context Menu -->
+		<!-- ******************************************************************************************** -->
+		<Form name="CommandBarContextMenu" style="MyMenuHeader" options="colorize" attach="left right">
+			<EditBox name="title" options="transparent doubleclick" size="16,0,164,28" style="MyMenuHeader"/>
+		</Form>
+	</Forms>
+</Skin>

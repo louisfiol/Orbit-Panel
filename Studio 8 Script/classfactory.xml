@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassFactory>
+
+	<ScriptClass
+		classID="{E3CCE1A5-9A88-64A6-980F-87CC234103B2}"
+		category="EditAddIn"
+		subCategory="Engine"
+		name="Color Toolbar (CT)"
+		sourceFile="main.js"
+		functionName="createInstance"
+		metaClassID="{8C473A1C-F7C5-5ECA-8242-4DBF71B3A476}">
+		<Attribute id="formName" value="UserPanel"/>
+		<Attribute id="groupName" value="Song.AddInPanel"/> 
+	</ScriptClass>
+
+	<ScriptMetaClass classID="{8C473A1C-F7C5-5ECA-8242-4DBF71B3A476}">
+		<ScriptClassResource id="Class:ImageResource" url="theme://$package/ToolbarIcon"/>  
+	</ScriptMetaClass>	
+
+	<ScriptClass
+		classID="{77B1B34C-14CE-45B1-8A5A-6E29BAA47300}"
+		category="EditTask"
+		subCategory="EventEdit"
+		name="Color Events Hex Color (CT)"
+		sourceFile="functions.js"
+		functionName="colorEvents"
+		metaClassID="{CFFBC7E6-9CF2-433D-BB3A-FFE55C4A6673}">
+		<Attribute id="menuPriority" value="-1"/>
+		<Attribute id="arguments" value="Hex"/>
+	</ScriptClass>
+
+	<ScriptClass
+		classID="{9B1EF766-D817-9325-DEFD-C6C00F96DFF4}"
+		category="EditTask"
+		subCategory="TrackEdit"
+		name="Conform Colors (CT)"
+		sourceFile="functions.js"
+		functionName="conformColors">
+		<Attribute id="menuPriority" value="-1"/>
+	</ScriptClass>
+
+	<ScriptClass
+		classID="{E3F8C73A-14B6-1B20-4937-A3D9757E5A7B}"
+		category="EditTask"
+		subCategory="TrackEdit"
+		name="Toggle Event Coloring (CT)"
+		sourceFile="functions.js"
+		functionName="toggleColorEvents">
+		<Attribute id="menuPriority" value="-1"/>
+		<Attribute id="arguments" value="State"/>
+	</ScriptClass>
+
+	<ScriptClass
+		classID="{266AC6B2-55D3-4D7C-DF02-A34D28A0D907}"
+		category="EditTask"
+		subCategory="TrackEdit"
+		name="Color Arranger Track (CT)"
+		sourceFile="match.js"
+		functionName="colorArrangerParts">
+		<Attribute id="menuPriority" value="-1"/>
+	</ScriptClass>
+	
+	<ScriptClass
+		classID="{CEDDF654-30FA-4E13-A38D-C9DB1AB35C1E}"
+		category="EditTask"
+		subCategory="TrackEdit"
+		name="Reset Arranger Track Colors (CT)"
+		sourceFile="match.js"
+		functionName="resetArrangerTrack">
+		<Attribute id="menuPriority" value="-1"/>
+	</ScriptClass>
+
+	<ScriptClass
+		classID="{493B9FCA-6EE6-4247-8A91-BFE90D7A9171}"
+		category="EditTask"
+		subCategory="TrackEdit"
+		name="Show by Hex Color (CT)"
+		sourceFile="match.js"
+		functionName="filterTrackByColor">
+		<Attribute id="menuFollow" value="1"/>
+		<Attribute id="arguments" value="Hex,Filter+"/>
+		<Attribute id="menuPriority" value="-1"/>
+
+	</ScriptClass>
+	
+	<ScriptClass
+		classID="{B7CE6BA1-3A5A-41F6-A7A3-98E5682B84E8}"
+		category="EditTask"
+		subCategory="TrackEdit"
+		name="Show by Track Color (CT)"
+		sourceFile="match.js"
+		functionName="filterBySelectedTrackColor">
+		<Attribute id="menuFollow" value="1"/>
+		<!-- <Attribute id="arguments" value="Hex,Filter+"/> -->
+		<Attribute id="menuPriority" value="-1"/>
+
+	</ScriptClass>
+		<ScriptClass
+		classID="{911DF3E4-E868-412A-8275-23EDE5B0F870}"
+		category="EditTask"
+		subCategory="TrackEdit"
+		name="Reset Filter (CT)"
+		sourceFile="match.js"
+		functionName="resetFilter">
+		<Attribute id="menuFollow" value="1"/>
+		<!-- <Attribute id="arguments" value="Hex,Filter+"/> -->
+		<Attribute id="menuPriority" value="-1"/>
+
+	</ScriptClass>
+
+<!-- 
+
+-->
+
+
+</ClassFactory>
+
+
