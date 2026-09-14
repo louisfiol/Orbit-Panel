@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Settings>
+	<bus value="0"/>
+	<fx value="1"/>
+	<vca value="1"/>
+	<aux value="1"/>
+	<instr value="0"/>
+	<iconLookup value="1"/>
+	<lockColor value="0"/>
+	<conformArrangerTrack value="1"/>
+	<filterPlusState value="1"/>
+</Settings>

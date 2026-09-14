@@ -1,0 +1,110 @@
+﻿*** Color Toolbar v3.1 Setup File
+*** Color Group 1
+8F0000|Bass|Acoustic Bass,Bass,DI,Direct,Ebass,EZbass,Finger Bass,Fretless,Picked Bass,Slap Bass
+8F3400||
+8F6B00|Keys|Acc,Accordion,AKAI,Arp,Arturia,ATOM SQ,B3,Behringer,Boss,Casio,Celesta,Celeste,Clav,Clavinet,E-Mu,E Piano,Electric Piano,Elektron,Grand Piano,Hammond,Harpsichord,Honky Tonk,JP6,JP8,Juno,Jupiter,Jupiter-8,Keys,Leslie,Mellotron,Moog,Key,Keyboard,KORG,Kurzweil,Lead Synthesizer,M-Audio,Nektar,Novation,OB,Pad,Phase Clav,Piano,PreSonus,Prophet,Organ,Rhodes,Roland,ROLI,Synthesizer,Wah Clav,Waldorf,Wurli,Wurlitzer,Wurly,Yamaha
+7E8F00|Brass|Bone,Brass,Cornet,Flugelhorn,French Horn,Horn,Muted Trumpet,Synth Brass,Tenor Trombone,Trombone,Trumpet,Tuba
+478F00|Woodwinds|Alto Sax,Alto Saxophone,Bari,Bari Sax,Baritone Saxophone,Bass Clarinet,Bass Flute,Bass Oboe,Bassoon,Clarinet,Contrabassoon,Double Bassoon,English Horn,Flute,Harmonica,Oboe,Ocarina,Piccolo,Reeds,Sax,Saxophone,Shakuhachi,Tenor Sax,Tenor Saxophone,Wind,Woodwind
+0B8D02|Verse|
+037D21|Electrics|CGtr,Chop,Chunk,Clean,Crunch,Distorted,E Gtr,E Guitar,E-Guitar,EGtr,El Gtr,Elec,Electric,Funk,Gtr,Guit Solo,Guitar,Guitar Solo,Lead Gtr,Lead Guitar,Les Paul,LGtr,Muted Guitar,Pedal Steel,Picked Guitar,RGtr,Rhythm,Slide,Steel,Strat,Stratocaster,Tele,Telecaster
+008F5A||
+00949E|Strings|1st Violin,2nd Violin,Bass Section,Bass Stacc,Basses,Celli,Cello,Contrabass,Double Bass,First String,Harp,Pizzicato String,Second String,Solina,Standup,Str,String,String Ensemble,Tremolo String,Upright,Viola,Violin
+00588F|Intro|
+00248F||
+000985||
+47008F|Chorus|Chorus Vamp,Refrain
+7C008F|PreC|Pre Chorus,PreChorus,Pre-Chorus
+8F006B||
+8F0030||
+*** Color Group 2
+FF2A2A||
+FF792A|Acoustics|12String,12 String,12-String,A Gtr,A-Guitar,Ac Gtr,Acoustic,Acst,AGtr,AGtr Pick,AGtr Strum,Autoharp,Banjo,Dobro,Dulcimer,Fiddle,Koto,Mandolin,Nylon,Resonator,Sitar,Ukulele,Zaemon
+FFCA2A|Drop|The Drop
+E5FF2A|v.Vocals|Ad Lib,AdLib,Alto,Alto Vocal,Baritone,Baritone Vocal,Bass Vocal,DBL,DVOX,Double Vocal,Duet,Female Vocal,Lead,Lead Vocal,Male Vocal,Melody,Quartet,Soprano,Soprano Vocal,Tenor,Tenor Vocal,Trio,Voc,Vocal,Voiceover,VOX
+94FF2A||
+38FC2A||
+1DFC54||
+2AFFB2||
+3AF3FF|Trax|Backing,Band-in-a-Box,BiaB,Click,Comp,Dub,Guide,Karaoke,Loop,Music,Playback,Riff,Trax
+2AADFF|Drums|808,Amb,Ambient,Addictive,Bass Drum,BD,Battery,Beats,BFD,China,Crash,Crush,Cymbal,Drum,Drum Pad,Drum Set,DrumLab,Drumset,EZdrummer,Floor Tom,FloorTom,FT,Hat,Hi Hat,Hi-Hat,High Tom,HiHat,HH,KD,KD In,KD Out,Kick,Kick In,Kick Out,Kit,Low Tom,Mid Tom,MODO,MT-PowerDrumKit,OH,OH L,OH R,OH Left,OH Right,Overhead,OverL,OverR,Rack Tom,RackTom,Ride,Rimshot,Room,Room Mic,RoomL,RoomR,RT,SD,SD Top,SD Bottom,SSD5,SSDSampler5,Side Stick,Sidestick,Snare,Snare Bottom,Snr,Snr Btm,Snare Side,Snare Top,Snr Top,Splash,Stereo Drum,Stick,Sub,Superior,Tom,Tom Low,Tom Mid,Tom Hi
+2A5EFF||
+1E2DFF||
+942AFF|BGV|Aah,BG,BGV,BV,Choir,Harmony,Ooh
+E22AFF||
+FF2ACA|Samplers|ARIA,ATOM,EWQL,EZkeys,Garritan,IKMultiMedia,Impact,Kontakt,Miroslav Philharmonik,MPC,Play,Presence,Regroover,Sample,SampleOne,SampleTank,Spitfire,Structure,Symphony,Vienna
+FF2A72||
+*** Color Group 3
+FF8F8F|Bridge|Break,Breakdown,Hook,Improvisation,Interlude,Middle8,Middle 8,Shakedown,Solo,Tag,The Breakdown,Vamp
+FFB88F|SoftSynths|Algorithm,Arturia,Atmos,Komplete,Mai Tai,Massive,Mojito,Multi Instrument,Omnisphere,Pigments,Reaktor,ReCycle,Serum,Sylenth1,Synth,Synth Strings,Synthmaster,Ultra,U-He
+FFE38F||
+F2FF8F|Outro|Coda,Conclusion,Ending,First Ending,Second Ending
+C7FF8F||
+98FD90||
+82FCA1||
+8FFFD6||
+9EF9FF||
+8FD4FF|Percussion|Agogo,Bell,Bongos,Cabasa,Cajon,Castanet,Chimes,Clap,Clave,Congas,Cowbell,Crickets,Cuica,Djembe,Glockenspiel,Gong,Guiro,Quijada,Hand Clap,Hit,Jawbone,Kalimba,Kettle,Mallet,Maraca,Marimba,OneShot,Orch Hit,Perc,Percussion,Pluck,Sandpaper,Shaker,Snap,Stab,Steel Drum,Taiko,Tamb,Tambourine,Timbale,Timpani,Trap,Triangle,Vibraphone,Vibraslap,Whip,Whistle,Woodblock,World,Xylophone
+8FABFF|Composers|Captain Chord,Chord,Chord Composer,Chord Prism,Chordjam,Chordz,Cthulhu,Forager,InstaChord,Scaler,Tone Space
+858DFF|Dialog|Crowd,eBook,Guest,Host,Interviewer,Narrator,Podcaster
+C78FFF|FX|Analog Delay,Chorus,Church,Delay,Echo,Effect,Flanger,FX,Hall,Phaser,Plate,Reverb,Room,Slap,SideChain,Verb,Vocoder
+F08FFF|Build|The Build,Build Up
+FF8FE3|EDM|Beat,Bypass,Ducking,EDM,Filter,Gain,Glass,Growl,Laser,Lazer,LC Freq,Machine Talk,Mute,Noise,Rises,Swosh,Sync
+FF8FB4||
+*** Color Group 4
+34383B||
+34383B||
+34383B||
+34383B||
+34383B||
+34383B||
+34383B||
+34383B||
+34383B||
+34383B||
+34383B||
+34383B||
+34383B||
+34383B||
+34383B||
+34383B||
+*** Color Group 5
+34383B||
+34383B||
+34383B||
+34383B||
+34383B||
+34383B||
+34383B||
+34383B||
+34383B||
+34383B||
+34383B||
+34383B||
+34383B||
+34383B||
+34383B||
+34383B||
+*** Color Group 6
+34383B||
+34383B||
+34383B||
+34383B||
+34383B||
+34383B||
+34383B||
+34383B||
+34383B||
+34383B||
+34383B||
+34383B||
+34383B||
+34383B||
+34383B||
+34383B||
+*** No Match, Bus, FX, VCA, Aux, Instr
+34383B|No Match|N/A
+810000|Bus|N/A
+FFFFFF|FX|N/A
+FF7E00|VCA|N/A
+00A6A4|Aux|N/A
+8383FF|Instr|N/A
