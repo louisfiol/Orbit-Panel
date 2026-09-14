@@ -1,1 +1,114 @@
-
+brass/brasssection|Brass,Brass Section,Synth Brass
+brass/cornet|Cornet
+brass/flugelhorn|Flugel Horn,Flugelhorn
+brass/frenchhorn|French Horn,English Horn
+brass/trombone|Bone,Tenor Trombone,Trombone
+brass/trumpet|Horn,Muted Trumpet,Trumpet
+brass/tuba|Tuba
+drums/drumpad|808,Addictive,ATOM,Battery,Beats,BFD,DrumLab,Drum Pad,EZdrummer,Impact,MODO,MT-PowerDrumKit,Regroover,SSD5,SSDSampler5,Superior
+drums/drumset|Drum,Drum Bus,DrumKit,Drum Kit,Drum Set,Drumset,Kit,Stereo Drum
+drums/floortom|Floor Tom,FloorTom,FT
+drums/hihat|Hat,HH,Hi Hat,HiHat,Hi-Hat,Sock
+drums/kickin|KD In,Kick In
+drums/kickout|KD Out,Kick Out
+drums/kick|Bass Drum,BD,KD,Kick,Sub
+drums/ohleft|OH L,OH Left,OHL,OverL
+drums/ohright|OH R,OH Right,OHR,OverR
+drums/oh|OH,Overhead
+drums/racktom|High Tom,Low Tom,Mid Tom,Rack Tom,RackTom,RT,Tom,Tom Hi,Tom Low,Tom Mid
+drums/roommic|Amb,Ambient,Room,Room Mic,RoomL,RoomR
+drums/snarebottom|SD Bottom,Snare Bottom,Snr Btm
+drums/snaretop|SD Top,Snare Top,Snr Top
+drums/snare|Rim,Rimshot,Side Stick,Sidestick,SD,Snare,Snare Side,Snr,Stick 
+guitars/acoustic2|Ac Gtr,Acoustic,Acst,AGtr,AGtr Pick,AGtr Strum
+guitars/acoustic|12String,12 String,12-String,A-Guitar,A Gtr,Autoharp,Dulcimer,Koto,Mandolin,Nylon,Resonator,Zaemon
+guitars/amp(combo)|Clean,Combo
+guitars/amp(fullstack)|Distorted,Full Stack,Gtr Amp
+guitars/amp(halfstack)|Crunch,Half Stack
+guitars/amp(smallcombo)|Chunk,Gtr Combo
+guitars/banjo|Banjo
+guitars/bass|Bass,Ebass,EZbass,Finger Bass,Fretless,Picked Bass,Slap Bass
+guitars/dobro|Dobro
+guitars/electric2|Chop,Funk,Gtr,Muted Guitar,Picked Guitar,Strat,Stratocaster,Tele,Telecaster
+guitars/electric|CGtr,E Gtr,E Guitar,E-Guitar,EGtr,El Gtr,Elec,Electric,Guit Solo,Guitar,Guitar Solo,LGtr,Lead Gtr,Lead Guitar,Les Paul
+guitars/guitars|Guit Bus,Gtr Bus,RGtr,Rhythm
+guitars/mandolin|Mandolin
+guitars/pedalsteel|Pedal Steel,Slide,Steel
+guitars/shamisen|Shamisen
+guitars/sitar|Sitar
+guitars/ukulele|Ukulele
+keyboards/accordion|Acc,Accordion
+keyboards/clavinet|AKAI,Algorithm,Arp,Arturia,Atmos,ATOM SQ,Behringer,Boss,Casio,Clav,Clavinet,E-Mu,Elektron,JP6,JP8,Juno,Jupiter,Jupiter-8,Keys,Leslie,Mellotron,Moog,Key,Keyboard,KORG,Kurzweil,M-Audio,Melotron,Nektar,Novation,OB,Pad,Phase Clavinet,PreSonus,Prophet,Roland,ROLI,Synth,Synthesizer,Wah Clavinet,Waldorf
+keyboards/harpsichord|Harpsichord
+keyboards/keyboardsbottomtier|
+keyboards/keyboardstoptier|Lead Synthesizer
+keyboards/keyboards|Multi Instrument
+keyboards/keys|E Piano,Electric Piano,Rhodes,Wurli,Wurlitzer,Wurly,Yamaha
+keyboards/organ|B3,Hammond,Organ
+keyboards/piano|Celesta,Celeste,Grand Piano,Honky Tonk,Piano,Studio Grand
+keyboards/pipeorgan|Pipe Organ
+keyboards/synth|ARIA,Cthulhu,EWQL,EZkeys,Forager,IKMultiMedia,InstaChord,Komplete,Kontakt,Mai Tai,Massive,Mojito,MPC,Omnisphere,Phase Clav,Pigments,Play,Presence,Reaktor,Recycle,Sample,SampleOne,SampleTank,Scaler,Serum,Structure,Sylenth1,Synth Strings,Synthmaster,Tone Space,Ultra,U-He,Wah Clav
+keyboards/vibraphone|Vibraphone
+other/band|Band-in-a-Box,Backing,BIAB,Captain Chord,Chord,Chord Composer,Chord Prism,Chordjam,Chordz,Comp,Dub,Guide,Karaoke,Loop,Music,Playback,Riff,Trax
+other/broadcast|EBook,Guest,Host,Interviewer,Narrator,Podcaster,Vocoder
+other/computer|Mac,Win,Windows
+other/dibox|DI,Direct
+other/fx|Analog Delay,Chorus,Church,Delay,Echo,Effect,Flanger,FX,Hall,Noise,Phaser,Plate,Reverb,Room,Slap,SideChain,Verb
+other/handclap|Clap,Hand Clap
+other/headphones|Cue,Earphones,Headphones,Listen Bus
+other/metronome|Click,Metronome
+other/mix|Main,Bus,Aux,VCA
+other/phone|
+other/rock|
+other/smiley|smiley
+other/sub|
+other/tablet|
+other/telephone|
+other/thumbup|
+other/turntable|Beat,Bypass,Ducking,EDM,Filter,Gain,Glass,Growl,Laser,Lazer,LC Freq,Machine Talk,Mute,Rises,Swosh,Sync
+other/video|
+percussion/bell|Agogo,Bell
+percussion/bongos|Bongos
+percussion/chimes|Chime
+percussion/congas|Congas
+percussion/cowbell|Cowbell
+percussion/cymbal|China,Crash,Crush,Cymbal,Ride,Splash
+percussion/cymbals|Gong
+percussion/handpan|Handpan
+percussion/kalimba|Kalimba
+percussion/miscperc|Cajon,Castanet,Clave,Crickets,Cuica,Djembe,Hit,Jawbone,OneShot,Orch Hit,Perc,Percussion,Pluck,Stab,Taiko,Trap,Whip,Whistle
+percussion/orchestralbassdrum|Kettle,Mallet
+percussion/shakers|Cabasa,Cajon,Guiro,Maraca,Quijada,Sandpaper,Shaker,Snap,Vibraslap,World
+percussion/steeldrum|Steel Drum
+percussion/tambourine|Tamb,Tambourine
+percussion/timbales|Timbale
+percussion/timpani|Timpani
+percussion/triangle|Triangle
+percussion/washboard|Washboard
+percussion/woodblock|Woodblock
+percussion/xylophone|Glockenspiel,Marimba,Vibraphone,Xylophone
+strings/cello|Celli,Cello
+strings/fiddle|Fiddle
+strings/harp|Harp
+strings/stringsection|Garritan,Miroslav Philharmonik,Solina,Spitfire,Str,String,String Ensemble,Symphony,Vienna
+strings/uprightbass|Acoustic Bass,Bass Section,Bass Stacc,Basses,Double Bass,Contrabass,Stand Up,Standup,Upright,Upright Bass
+strings/viola|Viola
+strings/violin|1st Violin,2nd Violin,First String,Pizzicato String,Second String,Tremolo String,Violin
+vocals/choirsingle|Alto,Alto Vocal,Baritone,Baritone Vocal,Bass Vocal,DBL,DVOX,Double Vocal,Soprano,Soprano Vocal,Tenor,Tenor Vocal
+vocals/choir|Aah,Choir,Harm,Harmony,Ooh
+vocals/crowdambient|Ambient,BG,BGV,BV,Crowd
+vocals/leadvocals|Female Vocal,Lead Vocal,Lead,Lead Vox,Main Vocal,Male Vocal,Melody,Voc,Vocal,Vocal Main,VOX
+vocals/microphone|Ad Lib,AdLib,Harmonica,Que,Voiceover
+vocals/vocals|Duet,Quartet,Trio,Vocals
+vocals/wirelessmic|Wireless Mic
+woodwinds/altosaxophone|Alto Sax,Alto Saxophone
+woodwinds/baritonesaxophone|Bari,Bari Sax,Baritone Saxophone
+woodwinds/bassclarinet|Bass Clarinet
+woodwinds/bassoon|Bassoon,Contrabassoon,Double Bassoon
+woodwinds/clarinet|Bass Clarinet,Clarinet
+woodwinds/flute|Bass Flute,Flute,Piccolo
+woodwinds/oboe|Bass Oboe,Oboe
+woodwinds/saxophone|Sax,Saxophone
+woodwinds/sopranosaxophone|Soprano Sax,Soprano Saxophone
+woodwinds/tenorsaxophone|Tenor Sax,Tenor Saxophone
+woodwinds/woodwinds|Ocarina,Reeds,Shakuhachi,Wind,Woodwind
